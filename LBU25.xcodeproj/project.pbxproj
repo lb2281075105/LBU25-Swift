@@ -12,6 +12,7 @@
 		3A5C9476216CD491002E87E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5C9474216CD491002E87E7 /* Main.storyboard */; };
 		3A5C9478216CD492002E87E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A5C9477216CD492002E87E7 /* Assets.xcassets */; };
 		3A5C947B216CD492002E87E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5C9479216CD492002E87E7 /* LaunchScreen.storyboard */; };
+		AB50F937545BEC2256F80919 /* Pods_LBU25.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F440AB4143933E31C0F026 /* Pods_LBU25.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		3A5C9477216CD492002E87E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A5C947A216CD492002E87E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A5C947C216CD492002E87E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C34598519D9FF7AAF1D4BA6 /* Pods-LBU25.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBU25.release.xcconfig"; path = "Pods/Target Support Files/Pods-LBU25/Pods-LBU25.release.xcconfig"; sourceTree = "<group>"; };
+		BF7DCDAA066679895AE88749 /* Pods-LBU25.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBU25.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LBU25/Pods-LBU25.debug.xcconfig"; sourceTree = "<group>"; };
+		F3F440AB4143933E31C0F026 /* Pods_LBU25.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LBU25.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB50F937545BEC2256F80919 /* Pods_LBU25.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				3A5C946F216CD491002E87E7 /* LBU25 */,
 				3A5C946E216CD491002E87E7 /* Products */,
+				8EA5652D3DE0D64B5F106E9E /* Pods */,
+				7F6F93DCD1BD99635E13CF9C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = LBU25;
 			sourceTree = "<group>";
 		};
+		7F6F93DCD1BD99635E13CF9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3F440AB4143933E31C0F026 /* Pods_LBU25.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8EA5652D3DE0D64B5F106E9E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF7DCDAA066679895AE88749 /* Pods-LBU25.debug.xcconfig */,
+				6C34598519D9FF7AAF1D4BA6 /* Pods-LBU25.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A5C947F216CD492002E87E7 /* Build configuration list for PBXNativeTarget "LBU25" */;
 			buildPhases = (
+				7EDE72BB9E7EAD26B1637AEE /* [CP] Check Pods Manifest.lock */,
 				3A5C9469216CD491002E87E7 /* Sources */,
 				3A5C946A216CD491002E87E7 /* Frameworks */,
 				3A5C946B216CD491002E87E7 /* Resources */,
+				48E3C5E5984604DF51E424DF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48E3C5E5984604DF51E424DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LBU25/Pods-LBU25-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LBU25/Pods-LBU25-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EDE72BB9E7EAD26B1637AEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LBU25-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3A5C9469216CD491002E87E7 /* Sources */ = {
@@ -278,6 +343,7 @@
 		};
 		3A5C9480216CD492002E87E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF7DCDAA066679895AE88749 /* Pods-LBU25.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +362,7 @@
 		};
 		3A5C9481216CD492002E87E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C34598519D9FF7AAF1D4BA6 /* Pods-LBU25.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
