@@ -1,9 +1,9 @@
 //
 //  UIColorExtension.swift
-//  U17
+//  LBU25
 //
-//  Created by charles on 2017/7/31.
-//  Copyright © 2017年 charles. All rights reserved.
+//  Created by liubo on 2017/7/31.
+//  Copyright © 2017年 liubo. All rights reserved.
 //
 
 import UIKit

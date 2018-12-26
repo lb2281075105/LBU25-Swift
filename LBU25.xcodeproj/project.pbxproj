@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A292BCB21D35EF3002FFA97 /* UHairPowder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A292BBB21D35EF3002FFA97 /* UHairPowder.swift */; };
+		3A292BCC21D35EF3002FFA97 /* UIBarButtonItemFixSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A292BBD21D35EF3002FFA97 /* UIBarButtonItemFixSpace.swift */; };
+		3A292BCD21D35EF3002FFA97 /* UCollectionViewAlignedLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A292BBF21D35EF3002FFA97 /* UCollectionViewAlignedLayout.swift */; };
+		3A292BCE21D35EF3002FFA97 /* UCollectionViewSectionBackgroundLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A292BC021D35EF3002FFA97 /* UCollectionViewSectionBackgroundLayout.swift */; };
+		3A292BCF21D35EF3002FFA97 /* UEmptyDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A292BC221D35EF3002FFA97 /* UEmptyDataSet.swift */; };
+		3A292BD321D3638A002FFA97 /* URefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A292BD221D36389002FFA97 /* URefresh.swift */; };
+		3A292BD621D363D8002FFA97 /* UNoticeBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A292BD521D363D8002FFA97 /* UNoticeBar.swift */; };
+		3A292BDA21D36515002FFA97 /* ConstraintArray+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A292BD821D36514002FFA97 /* ConstraintArray+Extensions.swift */; };
+		3A292BDB21D36515002FFA97 /* ConstraintArrayDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A292BD921D36514002FFA97 /* ConstraintArrayDSL.swift */; };
+		3A292BE021D3654D002FFA97 /* ParallaxHeaderMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A292BDD21D3654C002FFA97 /* ParallaxHeaderMode.swift */; };
+		3A292BE121D3654D002FFA97 /* UIScrollView+ParallaxHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A292BDE21D3654C002FFA97 /* UIScrollView+ParallaxHeader.swift */; };
+		3A292BE221D3654D002FFA97 /* ParallaxHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A292BDF21D3654C002FFA97 /* ParallaxHeader.swift */; };
+		3A292BE521D366BB002FFA97 /* UAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A292BE421D366BB002FFA97 /* UAPI.swift */; };
+		3A292BE821D36741002FFA97 /* UModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A292BE721D36741002FFA97 /* UModel.swift */; };
 		3A5C9471216CD491002E87E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5C9470216CD491002E87E7 /* AppDelegate.swift */; };
 		3A5C9476216CD491002E87E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5C9474216CD491002E87E7 /* Main.storyboard */; };
 		3A5C9478216CD492002E87E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A5C9477216CD492002E87E7 /* Assets.xcassets */; };
@@ -20,10 +34,26 @@
 		3A999685216D9352002D547B /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A99967C216D9352002D547B /* StringExtension.swift */; };
 		3A999686216D9352002D547B /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A99967D216D9352002D547B /* UIDeviceExtension.swift */; };
 		3A999687216D9352002D547B /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A99967E216D9352002D547B /* UIImageExtensions.swift */; };
+		3A99969E216DCDD5002D547B /* LBUTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A99969D216DCDD5002D547B /* LBUTabBarController.swift */; };
+		3A9996A3216DCFC3002D547B /* LBUGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9996A2216DCFC3002D547B /* LBUGlobal.swift */; };
 		AB50F937545BEC2256F80919 /* Pods_LBU25.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F440AB4143933E31C0F026 /* Pods_LBU25.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A292BBB21D35EF3002FFA97 /* UHairPowder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UHairPowder.swift; sourceTree = "<group>"; };
+		3A292BBD21D35EF3002FFA97 /* UIBarButtonItemFixSpace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemFixSpace.swift; sourceTree = "<group>"; };
+		3A292BBF21D35EF3002FFA97 /* UCollectionViewAlignedLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UCollectionViewAlignedLayout.swift; sourceTree = "<group>"; };
+		3A292BC021D35EF3002FFA97 /* UCollectionViewSectionBackgroundLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UCollectionViewSectionBackgroundLayout.swift; sourceTree = "<group>"; };
+		3A292BC221D35EF3002FFA97 /* UEmptyDataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UEmptyDataSet.swift; sourceTree = "<group>"; };
+		3A292BD221D36389002FFA97 /* URefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URefresh.swift; sourceTree = "<group>"; };
+		3A292BD521D363D8002FFA97 /* UNoticeBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UNoticeBar.swift; sourceTree = "<group>"; };
+		3A292BD821D36514002FFA97 /* ConstraintArray+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ConstraintArray+Extensions.swift"; sourceTree = "<group>"; };
+		3A292BD921D36514002FFA97 /* ConstraintArrayDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintArrayDSL.swift; sourceTree = "<group>"; };
+		3A292BDD21D3654C002FFA97 /* ParallaxHeaderMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxHeaderMode.swift; sourceTree = "<group>"; };
+		3A292BDE21D3654C002FFA97 /* UIScrollView+ParallaxHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+ParallaxHeader.swift"; sourceTree = "<group>"; };
+		3A292BDF21D3654C002FFA97 /* ParallaxHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxHeader.swift; sourceTree = "<group>"; };
+		3A292BE421D366BB002FFA97 /* UAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UAPI.swift; sourceTree = "<group>"; };
+		3A292BE721D36741002FFA97 /* UModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UModel.swift; sourceTree = "<group>"; };
 		3A5C946D216CD491002E87E7 /* LBU25.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LBU25.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A5C9470216CD491002E87E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A5C9475216CD491002E87E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -39,6 +69,8 @@
 		3A99967C216D9352002D547B /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		3A99967D216D9352002D547B /* UIDeviceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
 		3A99967E216D9352002D547B /* UIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		3A99969D216DCDD5002D547B /* LBUTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUTabBarController.swift; sourceTree = "<group>"; };
+		3A9996A2216DCFC3002D547B /* LBUGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUGlobal.swift; sourceTree = "<group>"; };
 		6C34598519D9FF7AAF1D4BA6 /* Pods-LBU25.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBU25.release.xcconfig"; path = "Pods/Target Support Files/Pods-LBU25/Pods-LBU25.release.xcconfig"; sourceTree = "<group>"; };
 		BF7DCDAA066679895AE88749 /* Pods-LBU25.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBU25.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LBU25/Pods-LBU25.debug.xcconfig"; sourceTree = "<group>"; };
 		F3F440AB4143933E31C0F026 /* Pods_LBU25.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LBU25.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +88,90 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A292BBA21D35EF3002FFA97 /* HairPowder */ = {
+			isa = PBXGroup;
+			children = (
+				3A292BBB21D35EF3002FFA97 /* UHairPowder.swift */,
+			);
+			path = HairPowder;
+			sourceTree = "<group>";
+		};
+		3A292BBC21D35EF3002FFA97 /* BarButtonItem */ = {
+			isa = PBXGroup;
+			children = (
+				3A292BBD21D35EF3002FFA97 /* UIBarButtonItemFixSpace.swift */,
+			);
+			path = BarButtonItem;
+			sourceTree = "<group>";
+		};
+		3A292BBE21D35EF3002FFA97 /* CollectionViewLayout */ = {
+			isa = PBXGroup;
+			children = (
+				3A292BBF21D35EF3002FFA97 /* UCollectionViewAlignedLayout.swift */,
+				3A292BC021D35EF3002FFA97 /* UCollectionViewSectionBackgroundLayout.swift */,
+			);
+			path = CollectionViewLayout;
+			sourceTree = "<group>";
+		};
+		3A292BC121D35EF3002FFA97 /* EmptyDataSet */ = {
+			isa = PBXGroup;
+			children = (
+				3A292BC221D35EF3002FFA97 /* UEmptyDataSet.swift */,
+			);
+			path = EmptyDataSet;
+			sourceTree = "<group>";
+		};
+		3A292BD121D36389002FFA97 /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				3A292BD221D36389002FFA97 /* URefresh.swift */,
+			);
+			path = Refresh;
+			sourceTree = "<group>";
+		};
+		3A292BD421D363D8002FFA97 /* NoticeBar */ = {
+			isa = PBXGroup;
+			children = (
+				3A292BD521D363D8002FFA97 /* UNoticeBar.swift */,
+			);
+			path = NoticeBar;
+			sourceTree = "<group>";
+		};
+		3A292BD721D36514002FFA97 /* SnapKitExtension */ = {
+			isa = PBXGroup;
+			children = (
+				3A292BD821D36514002FFA97 /* ConstraintArray+Extensions.swift */,
+				3A292BD921D36514002FFA97 /* ConstraintArrayDSL.swift */,
+			);
+			path = SnapKitExtension;
+			sourceTree = "<group>";
+		};
+		3A292BDC21D3654C002FFA97 /* ParallaxHeader */ = {
+			isa = PBXGroup;
+			children = (
+				3A292BDD21D3654C002FFA97 /* ParallaxHeaderMode.swift */,
+				3A292BDE21D3654C002FFA97 /* UIScrollView+ParallaxHeader.swift */,
+				3A292BDF21D3654C002FFA97 /* ParallaxHeader.swift */,
+			);
+			path = ParallaxHeader;
+			sourceTree = "<group>";
+		};
+		3A292BE321D366BB002FFA97 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				3A292BE421D366BB002FFA97 /* UAPI.swift */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		3A292BE621D36741002FFA97 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				3A292BE721D36741002FFA97 /* UModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		3A5C9464216CD491002E87E7 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +193,8 @@
 		3A5C946F216CD491002E87E7 /* LBU25 */ = {
 			isa = PBXGroup;
 			children = (
+				3A292BE621D36741002FFA97 /* model */,
+				3A292BE321D366BB002FFA97 /* api */,
 				3A999675216D9291002D547B /* Extension */,
 				3A999673216D8CD3002D547B /* common */,
 				3A999674216D8CD3002D547B /* controller */,
@@ -93,6 +211,7 @@
 		3A999672216D8CD3002D547B /* orther */ = {
 			isa = PBXGroup;
 			children = (
+				3A9996A2216DCFC3002D547B /* LBUGlobal.swift */,
 			);
 			path = orther;
 			sourceTree = "<group>";
@@ -100,6 +219,14 @@
 		3A999673216D8CD3002D547B /* common */ = {
 			isa = PBXGroup;
 			children = (
+				3A292BDC21D3654C002FFA97 /* ParallaxHeader */,
+				3A292BD721D36514002FFA97 /* SnapKitExtension */,
+				3A292BD421D363D8002FFA97 /* NoticeBar */,
+				3A292BD121D36389002FFA97 /* Refresh */,
+				3A292BBC21D35EF3002FFA97 /* BarButtonItem */,
+				3A292BBE21D35EF3002FFA97 /* CollectionViewLayout */,
+				3A292BC121D35EF3002FFA97 /* EmptyDataSet */,
+				3A292BBA21D35EF3002FFA97 /* HairPowder */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -107,6 +234,7 @@
 		3A999674216D8CD3002D547B /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				3A99969C216DCD93002D547B /* main */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -125,6 +253,14 @@
 				3A999678216D9352002D547B /* UIViewExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		3A99969C216DCD93002D547B /* main */ = {
+			isa = PBXGroup;
+			children = (
+				3A99969D216DCDD5002D547B /* LBUTabBarController.swift */,
+			);
+			path = main;
 			sourceTree = "<group>";
 		};
 		7F6F93DCD1BD99635E13CF9C /* Frameworks */ = {
@@ -155,7 +291,7 @@
 				3A5C9469216CD491002E87E7 /* Sources */,
 				3A5C946A216CD491002E87E7 /* Frameworks */,
 				3A5C946B216CD491002E87E7 /* Resources */,
-				48E3C5E5984604DF51E424DF /* [CP] Embed Pods Frameworks */,
+				38E24D4A565C7E5AB8ED952E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -172,12 +308,14 @@
 		3A5C9465216CD491002E87E7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LBU;
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "刘博";
 				TargetAttributes = {
 					3A5C946C216CD491002E87E7 = {
 						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -213,7 +351,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		48E3C5E5984604DF51E424DF /* [CP] Embed Pods Frameworks */ = {
+		38E24D4A565C7E5AB8ED952E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -282,15 +420,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A292BCD21D35EF3002FFA97 /* UCollectionViewAlignedLayout.swift in Sources */,
 				3A99967F216D9352002D547B /* UIBarButtonItemExtension.swift in Sources */,
+				3A99969E216DCDD5002D547B /* LBUTabBarController.swift in Sources */,
+				3A292BE121D3654D002FFA97 /* UIScrollView+ParallaxHeader.swift in Sources */,
+				3A292BD321D3638A002FFA97 /* URefresh.swift in Sources */,
+				3A292BCF21D35EF3002FFA97 /* UEmptyDataSet.swift in Sources */,
 				3A5C9471216CD491002E87E7 /* AppDelegate.swift in Sources */,
+				3A292BCC21D35EF3002FFA97 /* UIBarButtonItemFixSpace.swift in Sources */,
 				3A999684216D9352002D547B /* ArrayExtensions.swift in Sources */,
+				3A292BDA21D36515002FFA97 /* ConstraintArray+Extensions.swift in Sources */,
 				3A999686216D9352002D547B /* UIDeviceExtension.swift in Sources */,
 				3A999682216D9352002D547B /* DictionaryExtension.swift in Sources */,
 				3A999685216D9352002D547B /* StringExtension.swift in Sources */,
 				3A999681216D9352002D547B /* UIViewExtension.swift in Sources */,
 				3A999687216D9352002D547B /* UIImageExtensions.swift in Sources */,
+				3A292BDB21D36515002FFA97 /* ConstraintArrayDSL.swift in Sources */,
+				3A292BD621D363D8002FFA97 /* UNoticeBar.swift in Sources */,
 				3A999680216D9352002D547B /* UIColorExtension.swift in Sources */,
+				3A292BCB21D35EF3002FFA97 /* UHairPowder.swift in Sources */,
+				3A292BE821D36741002FFA97 /* UModel.swift in Sources */,
+				3A292BE021D3654D002FFA97 /* ParallaxHeaderMode.swift in Sources */,
+				3A9996A3216DCFC3002D547B /* LBUGlobal.swift in Sources */,
+				3A292BE221D3654D002FFA97 /* ParallaxHeader.swift in Sources */,
+				3A292BCE21D35EF3002FFA97 /* UCollectionViewSectionBackgroundLayout.swift in Sources */,
+				3A292BE521D366BB002FFA97 /* UAPI.swift in Sources */,
 				3A999683216D9352002D547B /* DispatchQueueExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,9 +598,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = liubo.LBU25;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liubo.LBU25;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -464,9 +618,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = liubo.LBU25;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liubo.LBU25;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

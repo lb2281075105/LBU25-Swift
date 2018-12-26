@@ -1,8 +1,8 @@
 //
 //  UIImageExtensions.swift
-//  U17
+//  LBU25
 //
-//  Created by charles on 2017/10/27.
+//  Created by liubo on 2017/10/27.
 //  Copyright © 2017年 None. All rights reserved.
 //
 
@@ -14,17 +14,17 @@ extension UIImage {
     
     /// EZSE: Returns base64 string
     public var base64: String {
-        return UIImageJPEGRepresentation(self, 1.0)!.base64EncodedString()
+        return self.jpegData(compressionQuality: 1.0)!.base64EncodedString()
     }
     
     /// EZSE: Returns compressed image to rate from 0 to 1
     public func compressImage(rate: CGFloat) -> Data? {
-        return UIImageJPEGRepresentation(self, rate)
+        return self.jpegData(compressionQuality: rate)
     }
 
     /// EZSE: Returns Image size in Bytes
     public func getSizeAsBytes() -> Int {
-        return UIImageJPEGRepresentation(self, 1)?.count ?? 0
+        return self.jpegData(compressionQuality: 1)?.count ?? 0
     }
 
     /// EZSE: Returns Image size in Kylobites
@@ -89,7 +89,7 @@ extension UIImage {
         }
         let scaledBounds: CGRect = CGRect(x: bound.origin.x * self.scale, y: bound.origin.y * self.scale, width: bound.width * self.scale, height: bound.height * self.scale)
         let imageRef = self.cgImage?.cropping(to: scaledBounds)
-        let croppedImage: UIImage = UIImage(cgImage: imageRef!, scale: self.scale, orientation: UIImageOrientation.up)
+        let croppedImage: UIImage = UIImage(cgImage: imageRef!, scale: self.scale, orientation: UIImage.Orientation.up)
         return croppedImage
     }
 

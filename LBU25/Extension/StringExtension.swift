@@ -1,8 +1,8 @@
 //
 //  StringExtension.swift
-//  U17
+//  LBU25
 //
-//  Created by charles on 2017/10/9.
+//  Created by liubo on 2017/10/9.
 //  Copyright © 2017年 None. All rights reserved.
 //
 

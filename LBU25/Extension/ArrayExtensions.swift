@@ -1,8 +1,8 @@
 //
 //  ArrayExtensions.swift
-//  U17
+//  LBU25
 //
-//  Created by charles on 2017/10/27.
+//  Created by liubo on 2017/10/27.
 //  Copyright © 2017年 None. All rights reserved.
 //
 
@@ -114,7 +114,7 @@ extension Array where Element: Equatable {
 
     /// EZSE: Returns the indexes of the object
     public func indexes(of element: Element) -> [Int] {
-        return enumerated().flatMap { ($0.element == element) ? $0.offset : nil }
+        return enumerated().compactMap { ($0.element == element) ? $0.offset : nil }
     }
 
     /// EZSE: Returns the last index of the object

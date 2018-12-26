@@ -4,6 +4,7 @@ platform :ios, '9.0'
 target 'LBU25' do
 
   use_frameworks!
+  inhibit_all_warnings!
 
   pod 'SnapKit'
   pod 'Then'
