@@ -75,7 +75,7 @@ class LBUTabBarController: UITabBarController {
     
 }
 
-extension UTabBarController {
+extension LBUTabBarController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         guard let select = selectedViewController else { return .lightContent }
         return select.preferredStatusBarStyle

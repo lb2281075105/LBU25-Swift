@@ -21,6 +21,6 @@ class LBUHomeController: LBUPageController {
     }
     
     @objc private func selectAction() {
-        navigationController?.pushViewController(USearchViewController(), animated: true)
+        navigationController?.pushViewController(LBUSearchController(), animated: true)
     }
 }

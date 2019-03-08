@@ -39,6 +39,7 @@
 		3A5C9476216CD491002E87E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5C9474216CD491002E87E7 /* Main.storyboard */; };
 		3A5C9478216CD492002E87E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A5C9477216CD492002E87E7 /* Assets.xcassets */; };
 		3A5C947B216CD492002E87E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5C9479216CD492002E87E7 /* LaunchScreen.storyboard */; };
+		3A93C84421D46897007F0196 /* LBUSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A93C84321D46897007F0196 /* LBUSearchController.swift */; };
 		3A99967F216D9352002D547B /* UIBarButtonItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A999676216D9352002D547B /* UIBarButtonItemExtension.swift */; };
 		3A999680216D9352002D547B /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A999677216D9352002D547B /* UIColorExtension.swift */; };
 		3A999681216D9352002D547B /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A999678216D9352002D547B /* UIViewExtension.swift */; };
@@ -89,6 +90,7 @@
 		3A5C9477216CD492002E87E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A5C947A216CD492002E87E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A5C947C216CD492002E87E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A93C84321D46897007F0196 /* LBUSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUSearchController.swift; sourceTree = "<group>"; };
 		3A999676216D9352002D547B /* UIBarButtonItemExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemExtension.swift; sourceTree = "<group>"; };
 		3A999677216D9352002D547B /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		3A999678216D9352002D547B /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				3A292BFC21D38048002FFA97 /* LBUClassifyController.swift */,
+				3A93C84321D46897007F0196 /* LBUSearchController.swift */,
 			);
 			path = classify;
 			sourceTree = "<group>";
@@ -244,7 +247,6 @@
 			isa = PBXGroup;
 			children = (
 				3A292BF621D37DA8002FFA97 /* LBUBaseController.swift */,
-				3A292BF821D37DC2002FFA97 /* LBUPageController.swift */,
 			);
 			path = base;
 			sourceTree = "<group>";
@@ -399,6 +401,7 @@
 				3A292BF521D37DA8002FFA97 /* base */,
 				3A99969D216DCDD5002D547B /* LBUTabBarController.swift */,
 				3A292BED21D37A45002FFA97 /* LBUNavController.swift */,
+				3A292BF821D37DC2002FFA97 /* LBUPageController.swift */,
 			);
 			path = main;
 			sourceTree = "<group>";
@@ -595,6 +598,7 @@
 				3A292BE021D3654D002FFA97 /* ParallaxHeaderMode.swift in Sources */,
 				3A9996A3216DCFC3002D547B /* LBUGlobal.swift in Sources */,
 				3A292C0621D38441002FFA97 /* LBUVIPController.swift in Sources */,
+				3A93C84421D46897007F0196 /* LBUSearchController.swift in Sources */,
 				3A292BE221D3654D002FFA97 /* ParallaxHeader.swift in Sources */,
 				3A292C0E21D384DE002FFA97 /* LBURankController.swift in Sources */,
 				3A292BCE21D35EF3002FFA97 /* UCollectionViewSectionBackgroundLayout.swift in Sources */,
@@ -746,7 +750,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MECQS3Z269;
+				DEVELOPMENT_TEAM = 7L8R6A82W6;
 				INFOPLIST_FILE = LBU25/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -757,7 +761,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "LBU25/orther/LBU25-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -769,7 +773,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MECQS3Z269;
+				DEVELOPMENT_TEAM = 7L8R6A82W6;
 				INFOPLIST_FILE = LBU25/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -779,7 +783,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.liubo.LBU25;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "LBU25/orther/LBU25-Bridging-Header.h";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

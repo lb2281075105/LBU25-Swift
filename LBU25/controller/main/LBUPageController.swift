@@ -15,7 +15,7 @@ enum UPageStyle {
     case topTabBar
 }
 
-class UPageViewController: LBUBaseController {
+class LBUPageController: LBUBaseController {
     
     var pageStyle: UPageStyle!
     
@@ -112,7 +112,7 @@ class UPageViewController: LBUBaseController {
     }
 }
 
-extension UPageViewController: UIPageViewControllerDataSource, UIPageViewControllerDelegate {
+extension LBUPageController: UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         guard let index = vcs.index(of: viewController) else { return nil }
         let beforeIndex = index - 1
