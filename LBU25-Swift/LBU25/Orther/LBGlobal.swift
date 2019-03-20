@@ -59,7 +59,7 @@ private  func _topVC(_ vc: UIViewController?) -> UIViewController? {
     }
 }
 
-//MARK: print
+// print
 func uLog<T>(_ message: T, file: String = #file, function: String = #function, lineNumber: Int = #line) {
     #if DEBUG
         let fileName = (file as NSString).lastPathComponent
@@ -67,7 +67,7 @@ func uLog<T>(_ message: T, file: String = #file, function: String = #function, l
     #endif
 }
 
-//MARK: Kingfisher
+// Kingfisher
 extension Kingfisher where Base: ImageView {
     @discardableResult
     public func setImage(urlString: String?, placeholder: Placeholder? = UIImage(named: "normal_placeholder_h")) -> RetrieveImageTask {
@@ -87,7 +87,7 @@ extension Kingfisher where Base: UIButton {
         
     }
 }
-//MARK: SnapKit
+// SnapKit
 extension ConstraintView {
     
     var usnp: ConstraintBasicAttributesDSL {
@@ -112,7 +112,7 @@ extension UICollectionView {
     }
 }
 
-//MARK: swizzledMethod
+// swizzledMethod
 extension NSObject {
     
     static func swizzleMethod(_ cls: AnyClass, originalSelector: Selector, swizzleSelector: Selector){
