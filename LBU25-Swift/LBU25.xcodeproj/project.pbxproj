@@ -32,6 +32,14 @@
 		3AADC92E224218FE001C9FC5 /* LBGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AADC92A224218FE001C9FC5 /* LBGlobal.swift */; };
 		3AADC930224218FE001C9FC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AADC92D224218FE001C9FC5 /* AppDelegate.swift */; };
 		3AADC9322242191E001C9FC5 /* LBUModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AADC9312242191E001C9FC5 /* LBUModel.swift */; };
+		3AADC93422421A65001C9FC5 /* LBUBookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AADC93322421A65001C9FC5 /* LBUBookController.swift */; };
+		3AADC93622421A86001C9FC5 /* LBUMineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AADC93522421A86001C9FC5 /* LBUMineController.swift */; };
+		3AADC93822421A93001C9FC5 /* LBUHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AADC93722421A93001C9FC5 /* LBUHomeController.swift */; };
+		3AADC93A22421AAA001C9FC5 /* LBUClassifyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AADC93922421AAA001C9FC5 /* LBUClassifyController.swift */; };
+		3AADC93C22421AC2001C9FC5 /* LBUBookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AADC93B22421AC2001C9FC5 /* LBUBookModel.swift */; };
+		3AADC93E22421AD8001C9FC5 /* LBUClassifyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AADC93D22421AD8001C9FC5 /* LBUClassifyModel.swift */; };
+		3AADC94022421AE7001C9FC5 /* LBUHomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AADC93F22421AE7001C9FC5 /* LBUHomeModel.swift */; };
+		3AADC94222421AF4001C9FC5 /* LBUMineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AADC94122421AF4001C9FC5 /* LBUMineModel.swift */; };
 		5668D36C1F7E146B00D24C39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5668D36B1F7E146B00D24C39 /* Assets.xcassets */; };
 		5668D36F1F7E146B00D24C39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5668D36D1F7E146B00D24C39 /* LaunchScreen.storyboard */; };
 		56B18A521F7E1D4D008E7175 /* LBUAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B18A511F7E1D4D008E7175 /* LBUAPI.swift */; };
@@ -63,6 +71,14 @@
 		3AADC92A224218FE001C9FC5 /* LBGlobal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBGlobal.swift; sourceTree = "<group>"; };
 		3AADC92D224218FE001C9FC5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AADC9312242191E001C9FC5 /* LBUModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBUModel.swift; sourceTree = "<group>"; };
+		3AADC93322421A65001C9FC5 /* LBUBookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUBookController.swift; sourceTree = "<group>"; };
+		3AADC93522421A86001C9FC5 /* LBUMineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUMineController.swift; sourceTree = "<group>"; };
+		3AADC93722421A93001C9FC5 /* LBUHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUHomeController.swift; sourceTree = "<group>"; };
+		3AADC93922421AAA001C9FC5 /* LBUClassifyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUClassifyController.swift; sourceTree = "<group>"; };
+		3AADC93B22421AC2001C9FC5 /* LBUBookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUBookModel.swift; sourceTree = "<group>"; };
+		3AADC93D22421AD8001C9FC5 /* LBUClassifyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUClassifyModel.swift; sourceTree = "<group>"; };
+		3AADC93F22421AE7001C9FC5 /* LBUHomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUHomeModel.swift; sourceTree = "<group>"; };
+		3AADC94122421AF4001C9FC5 /* LBUMineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUMineModel.swift; sourceTree = "<group>"; };
 		5668D3611F7E146B00D24C39 /* LBU25.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LBU25.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5668D36B1F7E146B00D24C39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5668D36E1F7E146B00D24C39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -216,6 +232,7 @@
 		3AADC91A224218AF001C9FC5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3AADC93722421A93001C9FC5 /* LBUHomeController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -223,6 +240,7 @@
 		3AADC91B224218AF001C9FC5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3AADC93F22421AE7001C9FC5 /* LBUHomeModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -247,6 +265,7 @@
 		3AADC91E224218AF001C9FC5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3AADC93922421AAA001C9FC5 /* LBUClassifyController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -254,6 +273,7 @@
 		3AADC91F224218AF001C9FC5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3AADC93D22421AD8001C9FC5 /* LBUClassifyModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -278,6 +298,7 @@
 		3AADC922224218AF001C9FC5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3AADC93522421A86001C9FC5 /* LBUMineController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -285,6 +306,7 @@
 		3AADC923224218AF001C9FC5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3AADC94122421AF4001C9FC5 /* LBUMineModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -309,6 +331,7 @@
 		3AADC926224218AF001C9FC5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3AADC93322421A65001C9FC5 /* LBUBookController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -316,6 +339,7 @@
 		3AADC927224218AF001C9FC5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3AADC93B22421AC2001C9FC5 /* LBUBookModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -414,10 +438,10 @@
 		5668D3591F7E146B00D24C39 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = U;
+				CLASSPREFIX = LBU;
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
-				ORGANIZATIONNAME = None;
+				ORGANIZATIONNAME = "刘博";
 				TargetAttributes = {
 					5668D3601F7E146B00D24C39 = {
 						CreatedOnToolsVersion = 9.0;
@@ -528,21 +552,29 @@
 			files = (
 				56B18A521F7E1D4D008E7175 /* LBUAPI.swift in Sources */,
 				3AADC9002241F25C001C9FC5 /* UIScrollView+ParallaxHeader.swift in Sources */,
+				3AADC93822421A93001C9FC5 /* LBUHomeController.swift in Sources */,
 				3AADC9102241F287001C9FC5 /* UIBarButtonItemExtension.swift in Sources */,
 				3AADC8FB2241F25C001C9FC5 /* UHairPowder.swift in Sources */,
 				3AADC9322242191E001C9FC5 /* LBUModel.swift in Sources */,
+				3AADC93C22421AC2001C9FC5 /* LBUBookModel.swift in Sources */,
+				3AADC93E22421AD8001C9FC5 /* LBUClassifyModel.swift in Sources */,
 				3AADC8FC2241F25C001C9FC5 /* UIBarButtonItemFixSpace.swift in Sources */,
 				3AADC9152241F287001C9FC5 /* DictionaryExtension.swift in Sources */,
+				3AADC94022421AE7001C9FC5 /* LBUHomeModel.swift in Sources */,
 				3AADC92E224218FE001C9FC5 /* LBGlobal.swift in Sources */,
+				3AADC93422421A65001C9FC5 /* LBUBookController.swift in Sources */,
 				3AADC9132241F287001C9FC5 /* DispatchQueueExtension.swift in Sources */,
 				3AADC8FD2241F25C001C9FC5 /* ConstraintArray+Extensions.swift in Sources */,
+				3AADC93622421A86001C9FC5 /* LBUMineController.swift in Sources */,
 				3AADC8F72241F25C001C9FC5 /* UCollectionViewAlignedLayout.swift in Sources */,
 				3AADC90D2241F287001C9FC5 /* ArrayExtensions.swift in Sources */,
 				3AADC9112241F287001C9FC5 /* UIDeviceExtension.swift in Sources */,
 				3AADC930224218FE001C9FC5 /* AppDelegate.swift in Sources */,
 				3AADC90E2241F287001C9FC5 /* UIColorExtension.swift in Sources */,
 				3AADC8F82241F25C001C9FC5 /* UCollectionViewSectionBackgroundLayout.swift in Sources */,
+				3AADC93A22421AAA001C9FC5 /* LBUClassifyController.swift in Sources */,
 				3AADC9142241F287001C9FC5 /* StringExtension.swift in Sources */,
+				3AADC94222421AF4001C9FC5 /* LBUMineModel.swift in Sources */,
 				3AADC8FE2241F25C001C9FC5 /* ConstraintArrayDSL.swift in Sources */,
 				3AADC90F2241F287001C9FC5 /* UIViewExtension.swift in Sources */,
 				3AADC8FA2241F25C001C9FC5 /* UEmptyDataSet.swift in Sources */,

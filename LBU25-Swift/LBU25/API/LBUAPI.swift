@@ -3,7 +3,7 @@
 //  U17
 //
 //  Created by liubo on 2017/9/29.
-//  Copyright © 2017年 None. All rights reserved.
+//  Copyright © 2017年 刘博. All rights reserved.
 //
 
 import Moya
