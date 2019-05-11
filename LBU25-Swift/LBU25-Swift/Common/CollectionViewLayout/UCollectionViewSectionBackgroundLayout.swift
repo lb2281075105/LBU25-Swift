@@ -1,9 +1,9 @@
 //
 //  UCollectionViewSectionBackgroundLayoutLayout.swift
-//  LBU25
+//  U17
 //
-//  Created by liubo on 2017/11/9.
-//  Copyright © 2017年 刘博. All rights reserved.
+//  Created by charles on 2017/11/9.
+//  Copyright © 2017年 None. All rights reserved.
 //
 
 import UIKit
@@ -109,8 +109,8 @@ class UCollectionViewSectionBackgroundLayout: UICollectionViewFlowLayout {
             sectionFrame.origin.x = inset.left
             sectionFrame.origin.y -= inset.top
             
-            let headLayout = layoutAttributesForSupplementaryView(ofKind: UICollectionElementKindSectionHeader, at: indexPath)
-            let footLayout = layoutAttributesForSupplementaryView(ofKind: UICollectionElementKindSectionFooter, at: indexPath)
+            let headLayout = layoutAttributesForSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, at: indexPath)
+            let footLayout = layoutAttributesForSupplementaryView(ofKind: UICollectionView.elementKindSectionFooter, at: indexPath)
             
             if self.scrollDirection == .horizontal {
                 sectionFrame.origin.y -= headLayout?.frame.height ?? 0
@@ -119,7 +119,7 @@ class UCollectionViewSectionBackgroundLayout: UICollectionViewFlowLayout {
             } else {
                 sectionFrame.origin.y -= headLayout?.frame.height ?? 0
                 sectionFrame.size.width = collectionView?.frame.width ?? 0
-                sectionFrame.size.height += inset.top + inset.bottom + (headLayout?.frame.height ?? 0) + (footLayout?.frame.height ?? 0)
+                sectionFrame.size.height = sectionFrame.size.height + inset.top + inset.bottom + (headLayout?.frame.height ?? 0) + (footLayout?.frame.height ?? 0)
             }
             
             let attr = UCollectionViewLayoutAttributes(forDecorationViewOfKind: SectionBackground, with: IndexPath(item: 0, section: section))

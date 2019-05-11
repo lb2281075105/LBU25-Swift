@@ -13,29 +13,43 @@
 		3AB53E4822865F4100302A5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AB53E4622865F4100302A5B /* Main.storyboard */; };
 		3AB53E4A22865F4100302A5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AB53E4922865F4100302A5B /* Assets.xcassets */; };
 		3AB53E4D22865F4100302A5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AB53E4B22865F4100302A5B /* LaunchScreen.storyboard */; };
-		3AB53E762286670E00302A5B /* UHairPowder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53E592286670E00302A5B /* UHairPowder.swift */; };
-		3AB53E772286670E00302A5B /* URefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53E5B2286670E00302A5B /* URefresh.swift */; };
-		3AB53E782286670E00302A5B /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53E5D2286670E00302A5B /* ArrayExtensions.swift */; };
-		3AB53E792286670E00302A5B /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53E5E2286670E00302A5B /* UIColorExtension.swift */; };
-		3AB53E7A2286670E00302A5B /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53E5F2286670E00302A5B /* UIViewExtension.swift */; };
-		3AB53E7B2286670E00302A5B /* UIBarButtonItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53E602286670E00302A5B /* UIBarButtonItemExtension.swift */; };
-		3AB53E7C2286670E00302A5B /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53E612286670E00302A5B /* UIDeviceExtension.swift */; };
-		3AB53E7D2286670E00302A5B /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53E622286670E00302A5B /* UIImageExtensions.swift */; };
-		3AB53E7E2286670E00302A5B /* DispatchQueueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53E632286670E00302A5B /* DispatchQueueExtension.swift */; };
-		3AB53E7F2286670E00302A5B /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53E642286670E00302A5B /* StringExtension.swift */; };
-		3AB53E802286670E00302A5B /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53E652286670E00302A5B /* DictionaryExtension.swift */; };
-		3AB53E812286670E00302A5B /* ParallaxHeaderMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53E672286670E00302A5B /* ParallaxHeaderMode.swift */; };
-		3AB53E822286670E00302A5B /* UIScrollView+ParallaxHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53E682286670E00302A5B /* UIScrollView+ParallaxHeader.swift */; };
-		3AB53E832286670E00302A5B /* ParallaxHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53E692286670E00302A5B /* ParallaxHeader.swift */; };
-		3AB53E842286670E00302A5B /* UNoticeBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53E6B2286670E00302A5B /* UNoticeBar.swift */; };
-		3AB53E852286670E00302A5B /* UEmptyDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53E6D2286670E00302A5B /* UEmptyDataSet.swift */; };
-		3AB53E862286670E00302A5B /* UCollectionViewAlignedLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53E6F2286670E00302A5B /* UCollectionViewAlignedLayout.swift */; };
-		3AB53E872286670E00302A5B /* UCollectionViewSectionBackgroundLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53E702286670E00302A5B /* UCollectionViewSectionBackgroundLayout.swift */; };
-		3AB53E882286670E00302A5B /* ConstraintArray+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53E722286670E00302A5B /* ConstraintArray+Extensions.swift */; };
-		3AB53E892286670E00302A5B /* ConstraintArrayDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53E732286670E00302A5B /* ConstraintArrayDSL.swift */; };
-		3AB53E8A2286670E00302A5B /* UIBarButtonItemFixSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53E752286670E00302A5B /* UIBarButtonItemFixSpace.swift */; };
 		3AB53E8C22866D2800302A5B /* LBUAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53E8B22866D2800302A5B /* LBUAPI.swift */; };
 		3AB53E9122866DC500302A5B /* LBUModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53E9022866DC500302A5B /* LBUModel.swift */; };
+		3AB53E9322866E4B00302A5B /* LBUGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53E9222866E4B00302A5B /* LBUGlobal.swift */; };
+		3AB53EAD2286746500302A5B /* LBUTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53EAC2286746500302A5B /* LBUTabBarController.swift */; };
+		3AB53EAF2286754E00302A5B /* LBUBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53EAE2286754D00302A5B /* LBUBaseController.swift */; };
+		3AB53EB12286758E00302A5B /* LBUPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53EB02286758E00302A5B /* LBUPageController.swift */; };
+		3AB53EB3228675AD00302A5B /* LBUNaviController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53EB2228675AD00302A5B /* LBUNaviController.swift */; };
+		3AB53EB5228675D000302A5B /* LBUWebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53EB4228675D000302A5B /* LBUWebController.swift */; };
+		3AB53EB72286908800302A5B /* LBUBookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53EB62286908800302A5B /* LBUBookController.swift */; };
+		3AB53EB9228690C700302A5B /* LBUHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53EB8228690C700302A5B /* LBUHomeController.swift */; };
+		3AB53EBB228690FD00302A5B /* LBUCateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53EBA228690FC00302A5B /* LBUCateController.swift */; };
+		3AB53EBD2286912A00302A5B /* LBUMineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53EBC2286912A00302A5B /* LBUMineController.swift */; };
+		3AB53EC22286920700302A5B /* LBUBookDownloadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53EC12286920700302A5B /* LBUBookDownloadController.swift */; };
+		3AB53EC42286922000302A5B /* LBUBookDocumentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53EC32286922000302A5B /* LBUBookDocumentController.swift */; };
+		3AB53EC62286922D00302A5B /* LBUBookCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53EC52286922D00302A5B /* LBUBookCollectionController.swift */; };
+		3AB53ECC228692C200302A5B /* LBUHomeVIPController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53ECB228692C200302A5B /* LBUHomeVIPController.swift */; };
+		3AB53ECE228692E900302A5B /* LBUHomeCommentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53ECD228692E900302A5B /* LBUHomeCommentController.swift */; };
+		3AB53ED0228692FF00302A5B /* LBUHomeRankController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53ECF228692FF00302A5B /* LBUHomeRankController.swift */; };
+		3AB53ED22286931300302A5B /* LBUHomeSubscibeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53ED12286931300302A5B /* LBUHomeSubscibeController.swift */; };
+		3AB53EEC228696C700302A5B /* URefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53ED4228696C600302A5B /* URefresh.swift */; };
+		3AB53EED228696C700302A5B /* ParallaxHeaderMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53ED6228696C600302A5B /* ParallaxHeaderMode.swift */; };
+		3AB53EEE228696C700302A5B /* UIScrollView+ParallaxHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53ED7228696C600302A5B /* UIScrollView+ParallaxHeader.swift */; };
+		3AB53EEF228696C700302A5B /* ParallaxHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53ED8228696C600302A5B /* ParallaxHeader.swift */; };
+		3AB53EF0228696C700302A5B /* UEmptyDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53EDA228696C600302A5B /* UEmptyDataSet.swift */; };
+		3AB53EF1228696C700302A5B /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53EDC228696C700302A5B /* ArrayExtensions.swift */; };
+		3AB53EF2228696C700302A5B /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53EDD228696C700302A5B /* UIColorExtension.swift */; };
+		3AB53EF3228696C700302A5B /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53EDE228696C700302A5B /* UIViewExtension.swift */; };
+		3AB53EF4228696C700302A5B /* UIBarButtonItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53EDF228696C700302A5B /* UIBarButtonItemExtension.swift */; };
+		3AB53EF5228696C700302A5B /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53EE0228696C700302A5B /* UIDeviceExtension.swift */; };
+		3AB53EF6228696C700302A5B /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53EE1228696C700302A5B /* UIImageExtensions.swift */; };
+		3AB53EF7228696C700302A5B /* DispatchQueueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53EE2228696C700302A5B /* DispatchQueueExtension.swift */; };
+		3AB53EF8228696C700302A5B /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53EE3228696C700302A5B /* StringExtension.swift */; };
+		3AB53EF9228696C700302A5B /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53EE4228696C700302A5B /* DictionaryExtension.swift */; };
+		3AB53EFA228696C700302A5B /* UHairPowder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53EE6228696C700302A5B /* UHairPowder.swift */; };
+		3AB53EFB228696C700302A5B /* UNoticeBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53EE8228696C700302A5B /* UNoticeBar.swift */; };
+		3AB53EFC228696C700302A5B /* UCollectionViewAlignedLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53EEA228696C700302A5B /* UCollectionViewAlignedLayout.swift */; };
+		3AB53EFD228696C700302A5B /* UCollectionViewSectionBackgroundLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53EEB228696C700302A5B /* UCollectionViewSectionBackgroundLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,29 +60,43 @@
 		3AB53E4922865F4100302A5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AB53E4C22865F4100302A5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AB53E4E22865F4100302A5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3AB53E592286670E00302A5B /* UHairPowder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UHairPowder.swift; sourceTree = "<group>"; };
-		3AB53E5B2286670E00302A5B /* URefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URefresh.swift; sourceTree = "<group>"; };
-		3AB53E5D2286670E00302A5B /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
-		3AB53E5E2286670E00302A5B /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
-		3AB53E5F2286670E00302A5B /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
-		3AB53E602286670E00302A5B /* UIBarButtonItemExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemExtension.swift; sourceTree = "<group>"; };
-		3AB53E612286670E00302A5B /* UIDeviceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
-		3AB53E622286670E00302A5B /* UIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
-		3AB53E632286670E00302A5B /* DispatchQueueExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchQueueExtension.swift; sourceTree = "<group>"; };
-		3AB53E642286670E00302A5B /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
-		3AB53E652286670E00302A5B /* DictionaryExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
-		3AB53E672286670E00302A5B /* ParallaxHeaderMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxHeaderMode.swift; sourceTree = "<group>"; };
-		3AB53E682286670E00302A5B /* UIScrollView+ParallaxHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+ParallaxHeader.swift"; sourceTree = "<group>"; };
-		3AB53E692286670E00302A5B /* ParallaxHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxHeader.swift; sourceTree = "<group>"; };
-		3AB53E6B2286670E00302A5B /* UNoticeBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UNoticeBar.swift; sourceTree = "<group>"; };
-		3AB53E6D2286670E00302A5B /* UEmptyDataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UEmptyDataSet.swift; sourceTree = "<group>"; };
-		3AB53E6F2286670E00302A5B /* UCollectionViewAlignedLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UCollectionViewAlignedLayout.swift; sourceTree = "<group>"; };
-		3AB53E702286670E00302A5B /* UCollectionViewSectionBackgroundLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UCollectionViewSectionBackgroundLayout.swift; sourceTree = "<group>"; };
-		3AB53E722286670E00302A5B /* ConstraintArray+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ConstraintArray+Extensions.swift"; sourceTree = "<group>"; };
-		3AB53E732286670E00302A5B /* ConstraintArrayDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintArrayDSL.swift; sourceTree = "<group>"; };
-		3AB53E752286670E00302A5B /* UIBarButtonItemFixSpace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemFixSpace.swift; sourceTree = "<group>"; };
 		3AB53E8B22866D2800302A5B /* LBUAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUAPI.swift; sourceTree = "<group>"; };
 		3AB53E9022866DC500302A5B /* LBUModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUModel.swift; sourceTree = "<group>"; };
+		3AB53E9222866E4B00302A5B /* LBUGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUGlobal.swift; sourceTree = "<group>"; };
+		3AB53EAC2286746500302A5B /* LBUTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUTabBarController.swift; sourceTree = "<group>"; };
+		3AB53EAE2286754D00302A5B /* LBUBaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUBaseController.swift; sourceTree = "<group>"; };
+		3AB53EB02286758E00302A5B /* LBUPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUPageController.swift; sourceTree = "<group>"; };
+		3AB53EB2228675AD00302A5B /* LBUNaviController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUNaviController.swift; sourceTree = "<group>"; };
+		3AB53EB4228675D000302A5B /* LBUWebController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUWebController.swift; sourceTree = "<group>"; };
+		3AB53EB62286908800302A5B /* LBUBookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUBookController.swift; sourceTree = "<group>"; };
+		3AB53EB8228690C700302A5B /* LBUHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUHomeController.swift; sourceTree = "<group>"; };
+		3AB53EBA228690FC00302A5B /* LBUCateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUCateController.swift; sourceTree = "<group>"; };
+		3AB53EBC2286912A00302A5B /* LBUMineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUMineController.swift; sourceTree = "<group>"; };
+		3AB53EC12286920700302A5B /* LBUBookDownloadController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUBookDownloadController.swift; sourceTree = "<group>"; };
+		3AB53EC32286922000302A5B /* LBUBookDocumentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUBookDocumentController.swift; sourceTree = "<group>"; };
+		3AB53EC52286922D00302A5B /* LBUBookCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUBookCollectionController.swift; sourceTree = "<group>"; };
+		3AB53ECB228692C200302A5B /* LBUHomeVIPController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUHomeVIPController.swift; sourceTree = "<group>"; };
+		3AB53ECD228692E900302A5B /* LBUHomeCommentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUHomeCommentController.swift; sourceTree = "<group>"; };
+		3AB53ECF228692FF00302A5B /* LBUHomeRankController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUHomeRankController.swift; sourceTree = "<group>"; };
+		3AB53ED12286931300302A5B /* LBUHomeSubscibeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUHomeSubscibeController.swift; sourceTree = "<group>"; };
+		3AB53ED4228696C600302A5B /* URefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URefresh.swift; sourceTree = "<group>"; };
+		3AB53ED6228696C600302A5B /* ParallaxHeaderMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxHeaderMode.swift; sourceTree = "<group>"; };
+		3AB53ED7228696C600302A5B /* UIScrollView+ParallaxHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+ParallaxHeader.swift"; sourceTree = "<group>"; };
+		3AB53ED8228696C600302A5B /* ParallaxHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxHeader.swift; sourceTree = "<group>"; };
+		3AB53EDA228696C600302A5B /* UEmptyDataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UEmptyDataSet.swift; sourceTree = "<group>"; };
+		3AB53EDC228696C700302A5B /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		3AB53EDD228696C700302A5B /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		3AB53EDE228696C700302A5B /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		3AB53EDF228696C700302A5B /* UIBarButtonItemExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemExtension.swift; sourceTree = "<group>"; };
+		3AB53EE0228696C700302A5B /* UIDeviceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
+		3AB53EE1228696C700302A5B /* UIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		3AB53EE2228696C700302A5B /* DispatchQueueExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchQueueExtension.swift; sourceTree = "<group>"; };
+		3AB53EE3228696C700302A5B /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		3AB53EE4228696C700302A5B /* DictionaryExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
+		3AB53EE6228696C700302A5B /* UHairPowder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UHairPowder.swift; sourceTree = "<group>"; };
+		3AB53EE8228696C700302A5B /* UNoticeBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UNoticeBar.swift; sourceTree = "<group>"; };
+		3AB53EEA228696C700302A5B /* UCollectionViewAlignedLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UCollectionViewAlignedLayout.swift; sourceTree = "<group>"; };
+		3AB53EEB228696C700302A5B /* UCollectionViewSectionBackgroundLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UCollectionViewSectionBackgroundLayout.swift; sourceTree = "<group>"; };
 		411CC3AD5C526AB78AAE4D1D /* Pods-LBU25-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBU25-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LBU25-Swift/Pods-LBU25-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		73744AA17CA555B7A28ECD9D /* Pods-LBU25-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBU25-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-LBU25-Swift/Pods-LBU25-Swift.release.xcconfig"; sourceTree = "<group>"; };
 		82C758FCA0ADD6978738FAD7 /* Pods_LBU25_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LBU25_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,8 +144,6 @@
 		3AB53E4122865F4100302A5B /* LBU25-Swift */ = {
 			isa = PBXGroup;
 			children = (
-				3AB53E4222865F4100302A5B /* AppDelegate.swift */,
-				3AB53E4422865F4100302A5B /* ViewController.swift */,
 				3AB53E57228666AB00302A5B /* API */,
 				3AB53E54228666AA00302A5B /* Common */,
 				3AB53E56228666AA00302A5B /* Controller */,
@@ -133,15 +159,13 @@
 		3AB53E54228666AA00302A5B /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				3AB53E742286670E00302A5B /* BarButtonItem */,
-				3AB53E6E2286670E00302A5B /* CollectionViewLayout */,
-				3AB53E6C2286670E00302A5B /* EmptyDataSet */,
-				3AB53E5C2286670E00302A5B /* Extension */,
-				3AB53E582286670E00302A5B /* HairPowder */,
-				3AB53E6A2286670E00302A5B /* NoticeBar */,
-				3AB53E662286670E00302A5B /* ParallaxHeader */,
-				3AB53E5A2286670E00302A5B /* Refresh */,
-				3AB53E712286670E00302A5B /* SnapKitExtension */,
+				3AB53EE9228696C700302A5B /* CollectionViewLayout */,
+				3AB53ED9228696C600302A5B /* EmptyDataSet */,
+				3AB53EDB228696C700302A5B /* Extension */,
+				3AB53EE5228696C700302A5B /* HairPowder */,
+				3AB53EE7228696C700302A5B /* NoticeBar */,
+				3AB53ED5228696C600302A5B /* ParallaxHeader */,
+				3AB53ED3228696C600302A5B /* Refresh */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -149,6 +173,9 @@
 		3AB53E55228666AA00302A5B /* Orther */ = {
 			isa = PBXGroup;
 			children = (
+				3AB53E4222865F4100302A5B /* AppDelegate.swift */,
+				3AB53E4422865F4100302A5B /* ViewController.swift */,
+				3AB53E9222866E4B00302A5B /* LBUGlobal.swift */,
 			);
 			path = Orther;
 			sourceTree = "<group>";
@@ -171,93 +198,15 @@
 			path = API;
 			sourceTree = "<group>";
 		};
-		3AB53E582286670E00302A5B /* HairPowder */ = {
-			isa = PBXGroup;
-			children = (
-				3AB53E592286670E00302A5B /* UHairPowder.swift */,
-			);
-			path = HairPowder;
-			sourceTree = "<group>";
-		};
-		3AB53E5A2286670E00302A5B /* Refresh */ = {
-			isa = PBXGroup;
-			children = (
-				3AB53E5B2286670E00302A5B /* URefresh.swift */,
-			);
-			path = Refresh;
-			sourceTree = "<group>";
-		};
-		3AB53E5C2286670E00302A5B /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				3AB53E5D2286670E00302A5B /* ArrayExtensions.swift */,
-				3AB53E5E2286670E00302A5B /* UIColorExtension.swift */,
-				3AB53E5F2286670E00302A5B /* UIViewExtension.swift */,
-				3AB53E602286670E00302A5B /* UIBarButtonItemExtension.swift */,
-				3AB53E612286670E00302A5B /* UIDeviceExtension.swift */,
-				3AB53E622286670E00302A5B /* UIImageExtensions.swift */,
-				3AB53E632286670E00302A5B /* DispatchQueueExtension.swift */,
-				3AB53E642286670E00302A5B /* StringExtension.swift */,
-				3AB53E652286670E00302A5B /* DictionaryExtension.swift */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		3AB53E662286670E00302A5B /* ParallaxHeader */ = {
-			isa = PBXGroup;
-			children = (
-				3AB53E672286670E00302A5B /* ParallaxHeaderMode.swift */,
-				3AB53E682286670E00302A5B /* UIScrollView+ParallaxHeader.swift */,
-				3AB53E692286670E00302A5B /* ParallaxHeader.swift */,
-			);
-			path = ParallaxHeader;
-			sourceTree = "<group>";
-		};
-		3AB53E6A2286670E00302A5B /* NoticeBar */ = {
-			isa = PBXGroup;
-			children = (
-				3AB53E6B2286670E00302A5B /* UNoticeBar.swift */,
-			);
-			path = NoticeBar;
-			sourceTree = "<group>";
-		};
-		3AB53E6C2286670E00302A5B /* EmptyDataSet */ = {
-			isa = PBXGroup;
-			children = (
-				3AB53E6D2286670E00302A5B /* UEmptyDataSet.swift */,
-			);
-			path = EmptyDataSet;
-			sourceTree = "<group>";
-		};
-		3AB53E6E2286670E00302A5B /* CollectionViewLayout */ = {
-			isa = PBXGroup;
-			children = (
-				3AB53E6F2286670E00302A5B /* UCollectionViewAlignedLayout.swift */,
-				3AB53E702286670E00302A5B /* UCollectionViewSectionBackgroundLayout.swift */,
-			);
-			path = CollectionViewLayout;
-			sourceTree = "<group>";
-		};
-		3AB53E712286670E00302A5B /* SnapKitExtension */ = {
-			isa = PBXGroup;
-			children = (
-				3AB53E722286670E00302A5B /* ConstraintArray+Extensions.swift */,
-				3AB53E732286670E00302A5B /* ConstraintArrayDSL.swift */,
-			);
-			path = SnapKitExtension;
-			sourceTree = "<group>";
-		};
-		3AB53E742286670E00302A5B /* BarButtonItem */ = {
-			isa = PBXGroup;
-			children = (
-				3AB53E752286670E00302A5B /* UIBarButtonItemFixSpace.swift */,
-			);
-			path = BarButtonItem;
-			sourceTree = "<group>";
-		};
 		3AB53E8D22866DAB00302A5B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3AB53EA82286710200302A5B /* LBUBase(父控制器) */,
+				3AB53EA0228670A600302A5B /* LBUBook(书架) */,
+				3AB53EA4228670A600302A5B /* LBUCate(分类) */,
+				3AB53E98228670A600302A5B /* LBUComic(漫画详情) */,
+				3AB53E9C228670A600302A5B /* LBUHome(首页) */,
+				3AB53E94228670A600302A5B /* LBUMine(我的) */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -275,6 +224,331 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		3AB53E94228670A600302A5B /* LBUMine(我的) */ = {
+			isa = PBXGroup;
+			children = (
+				3AB53E95228670A600302A5B /* Controller */,
+				3AB53E96228670A600302A5B /* Model */,
+				3AB53E97228670A600302A5B /* View */,
+			);
+			path = "LBUMine(我的)";
+			sourceTree = "<group>";
+		};
+		3AB53E95228670A600302A5B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3AB53EBC2286912A00302A5B /* LBUMineController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3AB53E96228670A600302A5B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3AB53E97228670A600302A5B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3AB53E98228670A600302A5B /* LBUComic(漫画详情) */ = {
+			isa = PBXGroup;
+			children = (
+				3AB53E99228670A600302A5B /* Controller */,
+				3AB53E9A228670A600302A5B /* Model */,
+				3AB53E9B228670A600302A5B /* View */,
+			);
+			path = "LBUComic(漫画详情)";
+			sourceTree = "<group>";
+		};
+		3AB53E99228670A600302A5B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3AB53E9A228670A600302A5B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3AB53E9B228670A600302A5B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3AB53E9C228670A600302A5B /* LBUHome(首页) */ = {
+			isa = PBXGroup;
+			children = (
+				3AB53E9D228670A600302A5B /* Controller */,
+				3AB53E9E228670A600302A5B /* Model */,
+				3AB53E9F228670A600302A5B /* View */,
+			);
+			path = "LBUHome(首页)";
+			sourceTree = "<group>";
+		};
+		3AB53E9D228670A600302A5B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3AB53EC9228692A600302A5B /* 订阅 */,
+				3AB53EC8228692A600302A5B /* 排行 */,
+				3AB53ECA228692A600302A5B /* 推荐 */,
+				3AB53EC7228692A600302A5B /* VIP */,
+				3AB53EB8228690C700302A5B /* LBUHomeController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3AB53E9E228670A600302A5B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3AB53E9F228670A600302A5B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3AB53EA0228670A600302A5B /* LBUBook(书架) */ = {
+			isa = PBXGroup;
+			children = (
+				3AB53EA1228670A600302A5B /* Controller */,
+				3AB53EA2228670A600302A5B /* Model */,
+				3AB53EA3228670A600302A5B /* View */,
+			);
+			path = "LBUBook(书架)";
+			sourceTree = "<group>";
+		};
+		3AB53EA1228670A600302A5B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3AB53EC0228691E800302A5B /* 收藏 */,
+				3AB53EBE228691E800302A5B /* 书单 */,
+				3AB53EBF228691E800302A5B /* 下载 */,
+				3AB53EB62286908800302A5B /* LBUBookController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3AB53EA2228670A600302A5B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3AB53EA3228670A600302A5B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3AB53EA4228670A600302A5B /* LBUCate(分类) */ = {
+			isa = PBXGroup;
+			children = (
+				3AB53EA5228670A600302A5B /* Controller */,
+				3AB53EA6228670A600302A5B /* Model */,
+				3AB53EA7228670A600302A5B /* View */,
+			);
+			path = "LBUCate(分类)";
+			sourceTree = "<group>";
+		};
+		3AB53EA5228670A600302A5B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3AB53EBA228690FC00302A5B /* LBUCateController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3AB53EA6228670A600302A5B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3AB53EA7228670A600302A5B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3AB53EA82286710200302A5B /* LBUBase(父控制器) */ = {
+			isa = PBXGroup;
+			children = (
+				3AB53EA92286710200302A5B /* Controller */,
+				3AB53EAA2286710200302A5B /* Model */,
+				3AB53EAB2286710200302A5B /* View */,
+			);
+			path = "LBUBase(父控制器)";
+			sourceTree = "<group>";
+		};
+		3AB53EA92286710200302A5B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3AB53EAC2286746500302A5B /* LBUTabBarController.swift */,
+				3AB53EAE2286754D00302A5B /* LBUBaseController.swift */,
+				3AB53EB02286758E00302A5B /* LBUPageController.swift */,
+				3AB53EB2228675AD00302A5B /* LBUNaviController.swift */,
+				3AB53EB4228675D000302A5B /* LBUWebController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3AB53EAA2286710200302A5B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3AB53EAB2286710200302A5B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3AB53EBE228691E800302A5B /* 书单 */ = {
+			isa = PBXGroup;
+			children = (
+				3AB53EC32286922000302A5B /* LBUBookDocumentController.swift */,
+			);
+			path = "书单";
+			sourceTree = "<group>";
+		};
+		3AB53EBF228691E800302A5B /* 下载 */ = {
+			isa = PBXGroup;
+			children = (
+				3AB53EC12286920700302A5B /* LBUBookDownloadController.swift */,
+			);
+			path = "下载";
+			sourceTree = "<group>";
+		};
+		3AB53EC0228691E800302A5B /* 收藏 */ = {
+			isa = PBXGroup;
+			children = (
+				3AB53EC52286922D00302A5B /* LBUBookCollectionController.swift */,
+			);
+			path = "收藏";
+			sourceTree = "<group>";
+		};
+		3AB53EC7228692A600302A5B /* VIP */ = {
+			isa = PBXGroup;
+			children = (
+				3AB53ECB228692C200302A5B /* LBUHomeVIPController.swift */,
+			);
+			path = VIP;
+			sourceTree = "<group>";
+		};
+		3AB53EC8228692A600302A5B /* 排行 */ = {
+			isa = PBXGroup;
+			children = (
+				3AB53ECF228692FF00302A5B /* LBUHomeRankController.swift */,
+			);
+			path = "排行";
+			sourceTree = "<group>";
+		};
+		3AB53EC9228692A600302A5B /* 订阅 */ = {
+			isa = PBXGroup;
+			children = (
+				3AB53ED12286931300302A5B /* LBUHomeSubscibeController.swift */,
+			);
+			path = "订阅";
+			sourceTree = "<group>";
+		};
+		3AB53ECA228692A600302A5B /* 推荐 */ = {
+			isa = PBXGroup;
+			children = (
+				3AB53ECD228692E900302A5B /* LBUHomeCommentController.swift */,
+			);
+			path = "推荐";
+			sourceTree = "<group>";
+		};
+		3AB53ED3228696C600302A5B /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				3AB53ED4228696C600302A5B /* URefresh.swift */,
+			);
+			path = Refresh;
+			sourceTree = "<group>";
+		};
+		3AB53ED5228696C600302A5B /* ParallaxHeader */ = {
+			isa = PBXGroup;
+			children = (
+				3AB53ED6228696C600302A5B /* ParallaxHeaderMode.swift */,
+				3AB53ED7228696C600302A5B /* UIScrollView+ParallaxHeader.swift */,
+				3AB53ED8228696C600302A5B /* ParallaxHeader.swift */,
+			);
+			path = ParallaxHeader;
+			sourceTree = "<group>";
+		};
+		3AB53ED9228696C600302A5B /* EmptyDataSet */ = {
+			isa = PBXGroup;
+			children = (
+				3AB53EDA228696C600302A5B /* UEmptyDataSet.swift */,
+			);
+			path = EmptyDataSet;
+			sourceTree = "<group>";
+		};
+		3AB53EDB228696C700302A5B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3AB53EDC228696C700302A5B /* ArrayExtensions.swift */,
+				3AB53EDD228696C700302A5B /* UIColorExtension.swift */,
+				3AB53EDE228696C700302A5B /* UIViewExtension.swift */,
+				3AB53EDF228696C700302A5B /* UIBarButtonItemExtension.swift */,
+				3AB53EE0228696C700302A5B /* UIDeviceExtension.swift */,
+				3AB53EE1228696C700302A5B /* UIImageExtensions.swift */,
+				3AB53EE2228696C700302A5B /* DispatchQueueExtension.swift */,
+				3AB53EE3228696C700302A5B /* StringExtension.swift */,
+				3AB53EE4228696C700302A5B /* DictionaryExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3AB53EE5228696C700302A5B /* HairPowder */ = {
+			isa = PBXGroup;
+			children = (
+				3AB53EE6228696C700302A5B /* UHairPowder.swift */,
+			);
+			path = HairPowder;
+			sourceTree = "<group>";
+		};
+		3AB53EE7228696C700302A5B /* NoticeBar */ = {
+			isa = PBXGroup;
+			children = (
+				3AB53EE8228696C700302A5B /* UNoticeBar.swift */,
+			);
+			path = NoticeBar;
+			sourceTree = "<group>";
+		};
+		3AB53EE9228696C700302A5B /* CollectionViewLayout */ = {
+			isa = PBXGroup;
+			children = (
+				3AB53EEA228696C700302A5B /* UCollectionViewAlignedLayout.swift */,
+				3AB53EEB228696C700302A5B /* UCollectionViewSectionBackgroundLayout.swift */,
+			);
+			path = CollectionViewLayout;
 			sourceTree = "<group>";
 		};
 		8B6D1BF3534B1A4AC26A8154 /* Frameworks */ = {
@@ -428,31 +702,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AB53EFD228696C700302A5B /* UCollectionViewSectionBackgroundLayout.swift in Sources */,
+				3AB53EC42286922000302A5B /* LBUBookDocumentController.swift in Sources */,
 				3AB53E4522865F4100302A5B /* ViewController.swift in Sources */,
-				3AB53E882286670E00302A5B /* ConstraintArray+Extensions.swift in Sources */,
-				3AB53E782286670E00302A5B /* ArrayExtensions.swift in Sources */,
-				3AB53E7E2286670E00302A5B /* DispatchQueueExtension.swift in Sources */,
+				3AB53EF7228696C700302A5B /* DispatchQueueExtension.swift in Sources */,
+				3AB53EFB228696C700302A5B /* UNoticeBar.swift in Sources */,
+				3AB53EAD2286746500302A5B /* LBUTabBarController.swift in Sources */,
+				3AB53EF6228696C700302A5B /* UIImageExtensions.swift in Sources */,
+				3AB53EB12286758E00302A5B /* LBUPageController.swift in Sources */,
+				3AB53EB72286908800302A5B /* LBUBookController.swift in Sources */,
+				3AB53EEC228696C700302A5B /* URefresh.swift in Sources */,
+				3AB53EF8228696C700302A5B /* StringExtension.swift in Sources */,
 				3AB53E9122866DC500302A5B /* LBUModel.swift in Sources */,
-				3AB53E822286670E00302A5B /* UIScrollView+ParallaxHeader.swift in Sources */,
-				3AB53E852286670E00302A5B /* UEmptyDataSet.swift in Sources */,
-				3AB53E772286670E00302A5B /* URefresh.swift in Sources */,
-				3AB53E802286670E00302A5B /* DictionaryExtension.swift in Sources */,
-				3AB53E7C2286670E00302A5B /* UIDeviceExtension.swift in Sources */,
-				3AB53E762286670E00302A5B /* UHairPowder.swift in Sources */,
-				3AB53E7B2286670E00302A5B /* UIBarButtonItemExtension.swift in Sources */,
-				3AB53E7A2286670E00302A5B /* UIViewExtension.swift in Sources */,
+				3AB53EFC228696C700302A5B /* UCollectionViewAlignedLayout.swift in Sources */,
+				3AB53EBD2286912A00302A5B /* LBUMineController.swift in Sources */,
+				3AB53EB5228675D000302A5B /* LBUWebController.swift in Sources */,
+				3AB53EF9228696C700302A5B /* DictionaryExtension.swift in Sources */,
+				3AB53EB9228690C700302A5B /* LBUHomeController.swift in Sources */,
+				3AB53EC22286920700302A5B /* LBUBookDownloadController.swift in Sources */,
+				3AB53EBB228690FD00302A5B /* LBUCateController.swift in Sources */,
+				3AB53E9322866E4B00302A5B /* LBUGlobal.swift in Sources */,
 				3AB53E8C22866D2800302A5B /* LBUAPI.swift in Sources */,
-				3AB53E862286670E00302A5B /* UCollectionViewAlignedLayout.swift in Sources */,
-				3AB53E7F2286670E00302A5B /* StringExtension.swift in Sources */,
-				3AB53E892286670E00302A5B /* ConstraintArrayDSL.swift in Sources */,
-				3AB53E7D2286670E00302A5B /* UIImageExtensions.swift in Sources */,
-				3AB53E872286670E00302A5B /* UCollectionViewSectionBackgroundLayout.swift in Sources */,
+				3AB53EAF2286754E00302A5B /* LBUBaseController.swift in Sources */,
+				3AB53EF2228696C700302A5B /* UIColorExtension.swift in Sources */,
+				3AB53EEE228696C700302A5B /* UIScrollView+ParallaxHeader.swift in Sources */,
+				3AB53ECC228692C200302A5B /* LBUHomeVIPController.swift in Sources */,
+				3AB53EFA228696C700302A5B /* UHairPowder.swift in Sources */,
+				3AB53EED228696C700302A5B /* ParallaxHeaderMode.swift in Sources */,
+				3AB53EC62286922D00302A5B /* LBUBookCollectionController.swift in Sources */,
+				3AB53EF4228696C700302A5B /* UIBarButtonItemExtension.swift in Sources */,
+				3AB53EEF228696C700302A5B /* ParallaxHeader.swift in Sources */,
+				3AB53ECE228692E900302A5B /* LBUHomeCommentController.swift in Sources */,
+				3AB53ED0228692FF00302A5B /* LBUHomeRankController.swift in Sources */,
+				3AB53ED22286931300302A5B /* LBUHomeSubscibeController.swift in Sources */,
+				3AB53EF3228696C700302A5B /* UIViewExtension.swift in Sources */,
 				3AB53E4322865F4100302A5B /* AppDelegate.swift in Sources */,
-				3AB53E8A2286670E00302A5B /* UIBarButtonItemFixSpace.swift in Sources */,
-				3AB53E832286670E00302A5B /* ParallaxHeader.swift in Sources */,
-				3AB53E812286670E00302A5B /* ParallaxHeaderMode.swift in Sources */,
-				3AB53E842286670E00302A5B /* UNoticeBar.swift in Sources */,
-				3AB53E792286670E00302A5B /* UIColorExtension.swift in Sources */,
+				3AB53EF0228696C700302A5B /* UEmptyDataSet.swift in Sources */,
+				3AB53EF1228696C700302A5B /* ArrayExtensions.swift in Sources */,
+				3AB53EB3228675AD00302A5B /* LBUNaviController.swift in Sources */,
+				3AB53EF5228696C700302A5B /* UIDeviceExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

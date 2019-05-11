@@ -1,9 +1,9 @@
 //
 //  UHairPowder.swift
-//  LBU25
+//  U17
 //
-//  Created by liubo on 2017/11/6.
-//  Copyright © 2017年 刘博. All rights reserved.
+//  Created by charles on 2017/11/6.
+//  Copyright © 2017年 None. All rights reserved.
 //
 
 import Foundation
@@ -51,7 +51,7 @@ open class UHairPowder {
         let height = UIApplication.shared.keyWindow?.frame.height ?? 0
         
         let statusWindow = UIWindow(frame: CGRect(x: 0, y: 0, width: width, height: 0))
-        statusWindow.windowLevel = UIWindowLevelStatusBar - 1
+        statusWindow.windowLevel = UIWindow.Level.statusBar - 1
         
         let hairPowderView = HairPowderView(frame: CGRect(x: 0, y: 0, width: width, height: height))
         hairPowderView.backgroundColor = UIColor.clear

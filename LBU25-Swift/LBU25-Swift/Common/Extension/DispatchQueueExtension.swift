@@ -1,9 +1,9 @@
 //
 //  DispatchQueueExtension.swift
-//  LBU25
+//  U17
 //
-//  Created by liubo on 2017/8/1.
-//  Copyright © 2017年 liubo. All rights reserved.
+//  Created by charles on 2017/8/1.
+//  Copyright © 2017年 charles. All rights reserved.
 //
 
 import Foundation

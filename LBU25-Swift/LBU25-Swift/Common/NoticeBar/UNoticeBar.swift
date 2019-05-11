@@ -1,9 +1,9 @@
 //
 //  UNoticeBar.swift
-//  LBU25
+//  U17
 //
-//  Created by liubo on 2017/11/27.
-//  Copyright © 2017年 刘博. All rights reserved.
+//  Created by charles on 2017/11/27.
+//  Copyright © 2017年 None. All rights reserved.
 //
 
 import UIKit
@@ -79,17 +79,17 @@ extension UNoticeBarStyle {
         return originY
     }
     
-    fileprivate var beginWindowLevel: UIWindowLevel {
+    fileprivate var beginWindowLevel: UIWindow.Level {
         switch self {
         case .onStatusBar:
-            return UIWindowLevelStatusBar + 1
+            return .statusBar + 1
         default:
-            return UIWindowLevelNormal
+            return .normal
         }
     }
     
-    fileprivate var endWindowLevel: UIWindowLevel {
-        return UIWindowLevelNormal
+    fileprivate var endWindowLevel: UIWindow.Level {
+        return .normal
     }
     
 }
