@@ -50,6 +50,8 @@
 		3AB53EFB228696C700302A5B /* UNoticeBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53EE8228696C700302A5B /* UNoticeBar.swift */; };
 		3AB53EFC228696C700302A5B /* UCollectionViewAlignedLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53EEA228696C700302A5B /* UCollectionViewAlignedLayout.swift */; };
 		3AB53EFD228696C700302A5B /* UCollectionViewSectionBackgroundLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53EEB228696C700302A5B /* UCollectionViewSectionBackgroundLayout.swift */; };
+		3AB53EFF2286995400302A5B /* LBUMineHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53EFE2286995400302A5B /* LBUMineHeaderView.swift */; };
+		3AB53F0122869AFA00302A5B /* LBUBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53F0022869AFA00302A5B /* LBUBaseTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +99,8 @@
 		3AB53EE8228696C700302A5B /* UNoticeBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UNoticeBar.swift; sourceTree = "<group>"; };
 		3AB53EEA228696C700302A5B /* UCollectionViewAlignedLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UCollectionViewAlignedLayout.swift; sourceTree = "<group>"; };
 		3AB53EEB228696C700302A5B /* UCollectionViewSectionBackgroundLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UCollectionViewSectionBackgroundLayout.swift; sourceTree = "<group>"; };
+		3AB53EFE2286995400302A5B /* LBUMineHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUMineHeaderView.swift; sourceTree = "<group>"; };
+		3AB53F0022869AFA00302A5B /* LBUBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUBaseTableViewCell.swift; sourceTree = "<group>"; };
 		411CC3AD5C526AB78AAE4D1D /* Pods-LBU25-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBU25-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LBU25-Swift/Pods-LBU25-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		73744AA17CA555B7A28ECD9D /* Pods-LBU25-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBU25-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-LBU25-Swift/Pods-LBU25-Swift.release.xcconfig"; sourceTree = "<group>"; };
 		82C758FCA0ADD6978738FAD7 /* Pods_LBU25_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LBU25_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -254,6 +258,7 @@
 		3AB53E97228670A600302A5B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3AB53EFE2286995400302A5B /* LBUMineHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -424,6 +429,7 @@
 		3AB53EAB2286710200302A5B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3AB53F0022869AFA00302A5B /* LBUBaseTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -728,11 +734,13 @@
 				3AB53EEE228696C700302A5B /* UIScrollView+ParallaxHeader.swift in Sources */,
 				3AB53ECC228692C200302A5B /* LBUHomeVIPController.swift in Sources */,
 				3AB53EFA228696C700302A5B /* UHairPowder.swift in Sources */,
+				3AB53EFF2286995400302A5B /* LBUMineHeaderView.swift in Sources */,
 				3AB53EED228696C700302A5B /* ParallaxHeaderMode.swift in Sources */,
 				3AB53EC62286922D00302A5B /* LBUBookCollectionController.swift in Sources */,
 				3AB53EF4228696C700302A5B /* UIBarButtonItemExtension.swift in Sources */,
 				3AB53EEF228696C700302A5B /* ParallaxHeader.swift in Sources */,
 				3AB53ECE228692E900302A5B /* LBUHomeCommentController.swift in Sources */,
+				3AB53F0122869AFA00302A5B /* LBUBaseTableViewCell.swift in Sources */,
 				3AB53ED0228692FF00302A5B /* LBUHomeRankController.swift in Sources */,
 				3AB53ED22286931300302A5B /* LBUHomeSubscibeController.swift in Sources */,
 				3AB53EF3228696C700302A5B /* UIViewExtension.swift in Sources */,
