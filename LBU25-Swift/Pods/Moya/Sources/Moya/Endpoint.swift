@@ -21,19 +21,19 @@ open class Endpoint {
     public typealias SampleResponseClosure = () -> EndpointSampleResponse
 
     /// A string representation of the URL for the request.
-    open let url: String
+    public let url: String
 
     /// A closure responsible for returning an `EndpointSampleResponse`.
-    open let sampleResponseClosure: SampleResponseClosure
+    public let sampleResponseClosure: SampleResponseClosure
 
     /// The HTTP method for the request.
-    open let method: Moya.Method
+    public let method: Moya.Method
 
     /// The `Task` for the request.
-    open let task: Task
+    public let task: Task
 
     /// The HTTP header fields for the request.
-    open let httpHeaderFields: [String: String]?
+    public let httpHeaderFields: [String: String]?
 
     public init(url: String,
                 sampleResponseClosure: @escaping SampleResponseClosure,
@@ -119,9 +119,12 @@ extension Endpoint {
 
 /// Required for using `Endpoint` as a key type in a `Dictionary`.
 extension Endpoint: Equatable, Hashable {
-    public var hashValue: Int {
-        let request = try? urlRequest()
-        return request?.hashValue ?? url.hashValue
+    public func hash(into hasher: inout Hasher) {
+        guard let request = try? urlRequest() else {
+            hasher.combine(url)
+            return
+        }
+        hasher.combine(request)
     }
 
     /// Note: If both Endpoints fail to produce a URLRequest the comparison will

@@ -1,6 +1,0 @@
-framework module Pods_LBU25 {
-  umbrella header "Pods-LBU25-umbrella.h"
-
-  export *
-  module * { export * }
-}

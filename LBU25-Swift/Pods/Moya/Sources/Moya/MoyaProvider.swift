@@ -24,12 +24,20 @@ public struct ProgressResponse {
 
     /// The fraction of the overall work completed by the progress object.
     public var progress: Double {
-        return progressObject?.fractionCompleted ?? 1.0
+        if completed {
+            return 1.0
+        } else if let progressObject = progressObject, progressObject.totalUnitCount > 0 {
+            // if the Content-Length is specified we can rely on `fractionCompleted`
+            return progressObject.fractionCompleted
+        } else {
+            // if the Content-Length is not specified, return progress 0.0 until it's completed
+            return 0.0
+        }
     }
 
     /// A Boolean value stating whether the request is completed.
     public var completed: Bool {
-        return progress == 1.0 && response != nil
+        return response != nil
     }
 }
 
@@ -59,23 +67,23 @@ open class MoyaProvider<Target: TargetType>: MoyaProviderType {
     public typealias StubClosure = (Target) -> Moya.StubBehavior
 
     /// A closure responsible for mapping a `TargetType` to an `EndPoint`.
-    open let endpointClosure: EndpointClosure
+    public let endpointClosure: EndpointClosure
 
     /// A closure deciding if and what request should be performed.
-    open let requestClosure: RequestClosure
+    public let requestClosure: RequestClosure
 
     /// A closure responsible for determining the stubbing behavior
     /// of a request for a given `TargetType`.
-    open let stubClosure: StubClosure
+    public let stubClosure: StubClosure
 
     /// The manager for the session.
-    open let manager: Manager
+    public let manager: Manager
 
     /// A list of plugins.
     /// e.g. for logging, network activity indicator or credentials.
-    open let plugins: [PluginType]
+    public let plugins: [PluginType]
 
-    open let trackInflights: Bool
+    public let trackInflights: Bool
 
     open internal(set) var inflightRequests: [Endpoint: [Moya.Completion]] = [:]
 
@@ -170,17 +178,17 @@ public extension MoyaProvider {
     // at least add some class functions to allow easy access to common stubbing closures.
 
     /// Do not stub.
-    public final class func neverStub(_: Target) -> Moya.StubBehavior {
+    final class func neverStub(_: Target) -> Moya.StubBehavior {
         return .never
     }
 
     /// Return a response immediately.
-    public final class func immediatelyStub(_: Target) -> Moya.StubBehavior {
+    final class func immediatelyStub(_: Target) -> Moya.StubBehavior {
         return .immediate
     }
 
     /// Return a response after a delay.
-    public final class func delayedStub(_ seconds: TimeInterval) -> (Target) -> Moya.StubBehavior {
+    final class func delayedStub(_ seconds: TimeInterval) -> (Target) -> Moya.StubBehavior {
         return { _ in return .delayed(seconds: seconds) }
     }
 }
