@@ -21,7 +21,7 @@ let LoadingPlugin = NetworkActivityPlugin { (type, target) in
     }
 }
 
-let timeoutClosure = {(endpoint: Endpoint, closure: MoyaProvider<UApi>.RequestResultClosure) -> Void in
+let timeoutClosure = {(endpoint: Endpoint, closure: MoyaProvider<LBUApi>.RequestResultClosure) -> Void in
     
     if var urlRequest = try? endpoint.urlRequest() {
         urlRequest.timeoutInterval = 20
@@ -31,10 +31,10 @@ let timeoutClosure = {(endpoint: Endpoint, closure: MoyaProvider<UApi>.RequestRe
     }
 }
 
-let ApiProvider = MoyaProvider<UApi>(requestClosure: timeoutClosure)
-let ApiLoadingProvider = MoyaProvider<UApi>(requestClosure: timeoutClosure, plugins: [LoadingPlugin])
+let ApiProvider = MoyaProvider<LBUApi>(requestClosure: timeoutClosure)
+let ApiLoadingProvider = MoyaProvider<LBUApi>(requestClosure: timeoutClosure, plugins: [LoadingPlugin])
 
-enum UApi {
+enum LBUApi {
     case searchHot//搜索热门
     case searchRelative(inputText: String)//相关搜索
     case searchResult(argCon: Int, q: String)//搜索结果
@@ -58,7 +58,7 @@ enum UApi {
     case chapter(chapter_id: Int)//章节内容
 }
 
-extension UApi: TargetType {
+extension LBUApi: TargetType {
     
     var baseURL: URL { return URL(string: "http://app.u17.com/v3/appV3_3/ios/phone")! }
     

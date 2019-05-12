@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MJRefresh
 
 class LBUCateController: LBUBaseController {
 
@@ -23,7 +24,7 @@ class LBUCateController: LBUBaseController {
         searchButon.setImage(UIImage(named: "nav_search")?.withRenderingMode(.alwaysOriginal), for: .normal)
         searchButon.titleEdgeInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 0)
         searchButon.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 5)
-        searchButon.addTarget(self, action:#selector(searchAction), for: .touchUpInside)
+        searchButon.addTarget(self, action:#selector(searchButtonClick), for: .touchUpInside)
         return searchButon
     }()
     
@@ -38,19 +39,20 @@ class LBUCateController: LBUBaseController {
         collectionView.alwaysBounceVertical = true
         collectionView.register(cellType: LBURankCollectionViewCell.self)
         collectionView.register(cellType: LBUTopCollectionViewCell.self)
-        collectionView.uHead = URefreshHeader { [weak self] in self?.loadData() }
-        collectionView.uempty = UEmptyView { [weak self] in self?.loadData() }
+        collectionView.uHead = URefreshHeader { [weak self] in self?.setupLoadData() }
+        collectionView.uempty = UEmptyView { [weak self] in self?.setupLoadData() }
         return collectionView
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        loadData()
+        // 加载数据
+        setupLoadData()
     }
     
-    private func loadData() {
-        ApiLoadingProvider.request(UApi.cateList, model: CateListModel.self) { (returnData) in
+    private func setupLoadData() {
+        ApiLoadingProvider.request(LBUApi.cateList, model: CateListModel.self) { (returnData) in
             self.collectionView.uempty?.allowShow = true
             
             self.searchString = returnData?.recommendSearch ?? ""
@@ -63,13 +65,13 @@ class LBUCateController: LBUBaseController {
         }
     }
     
-    @objc private func searchAction() {
-        navigationController?.pushViewController(USearchViewController(), animated: true)
+    @objc private func searchButtonClick() {
+//        navigationController?.pushViewController(USearchViewController(), animated: true)
     }
     
-    override func configUI() {
-        view.addSubview(collectionView)
-        collectionView.snp.makeConstraints{ $0.edges.equalTo(self.view.usnp.edges) }
+    override func setupLayout(){
+//        view.addSubview(collectionView)
+//        collectionView.snp.makeConstraints{ $0.edges.equalTo(self.view.usnp.edges) }
     }
     
     override func configNavigationBar() {

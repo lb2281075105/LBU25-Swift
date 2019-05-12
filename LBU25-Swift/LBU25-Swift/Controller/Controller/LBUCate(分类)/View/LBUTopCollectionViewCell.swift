@@ -28,7 +28,7 @@ class LBUTopCollectionViewCell: LBUBaseCollectionViewCell {
     }
     
     
-    var model: TopModel? {
+    var model: LBUTopModel? {
         didSet {
             guard let model = model else { return }
             iconView.kf.setImage(urlString: model.cover)

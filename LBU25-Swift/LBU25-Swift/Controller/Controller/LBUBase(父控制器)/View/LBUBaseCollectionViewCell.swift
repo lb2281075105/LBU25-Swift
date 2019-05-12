@@ -7,8 +7,8 @@
 //
 
 import UIKit
-
-class LBUBaseCollectionViewCell: UICollectionViewCell {
+import Reusable
+class LBUBaseCollectionViewCell: UICollectionViewCell,Reusable {
     
     override init(frame: CGRect) {
         super.init(frame: frame)

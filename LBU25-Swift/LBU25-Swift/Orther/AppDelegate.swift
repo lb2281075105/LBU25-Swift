@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    // 设置网络请求的统一域名
+    // 监测网络
     lazy var reachability: NetworkReachabilityManager? = {
         return NetworkReachabilityManager(host: "http://app.u17.com")
     }()

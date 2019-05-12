@@ -42,7 +42,7 @@ class LBURankCollectionViewCell: LBUBaseCollectionViewCell {
         }
     }
     
-    var model: RankingModel? {
+    var model: LBURankingModel? {
         didSet {
             guard let model = model else { return }
             iconView.kf.setImage(urlString: model.cover)
