@@ -66,12 +66,15 @@ class LBUCateController: LBUBaseController {
     }
     
     @objc private func searchButtonClick() {
+        // mark -- 增加
 //        navigationController?.pushViewController(USearchViewController(), animated: true)
     }
     
     override func setupLayout(){
-//        view.addSubview(collectionView)
-//        collectionView.snp.makeConstraints{ $0.edges.equalTo(self.view.usnp.edges) }
+        view.addSubview(collectionView)
+        collectionView.snp.makeConstraints{make in
+            make.edges.equalTo(self.view.usnp.edges)
+        }
     }
     
     override func configNavigationBar() {
@@ -124,7 +127,7 @@ extension LBUCateController: UICollectionViewDelegateFlowLayout, UICollectionVie
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        // 增加
+        // mark -- 增加
     }
 }
 
