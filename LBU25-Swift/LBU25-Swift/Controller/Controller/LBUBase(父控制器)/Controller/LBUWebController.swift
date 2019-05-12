@@ -46,9 +46,9 @@ class LBUWebController: LBUBaseController {
         webView.snp.makeConstraints{ $0.edges.equalTo(self.view.usnp.edges) }
         
         view.addSubview(progressView)
-        progressView.snp.makeConstraints {
-            $0.left.top.right.equalToSuperview()
-            $0.height.equalTo(2)
+        progressView.snp.makeConstraints { make in
+            make.left.top.right.equalToSuperview()
+            make.height.equalTo(2)
         }
     }
     

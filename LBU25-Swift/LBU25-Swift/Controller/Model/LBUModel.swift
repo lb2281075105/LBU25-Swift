@@ -341,7 +341,7 @@ struct SubscribeListModel: HandyJSON {
     var newSubscribeList: [ComicListModel]?
 }
 
-struct RankingModel: HandyJSON {
+struct LBURankingModel: HandyJSON {
     var argCon: Int = 0
     var argName: String?
     var argValue: Int = 0
@@ -356,7 +356,7 @@ struct RankingModel: HandyJSON {
 }
 
 struct RankinglistModel: HandyJSON {
-    var rankinglist: [RankingModel]?
+    var rankinglist: [LBURankingModel]?
 }
 
 struct TabModel: HandyJSON {
@@ -371,7 +371,7 @@ struct TopExtra: HandyJSON {
     var tabList: [TabModel]?
 }
 
-struct TopModel: HandyJSON {
+struct LBUTopModel: HandyJSON {
     var sortId: Int = 0
     var sortName: String?
     var cover: String?
@@ -381,8 +381,8 @@ struct TopModel: HandyJSON {
 
 struct CateListModel: HandyJSON {
     var recommendSearch: String?
-    var rankingList:[RankingModel]?
-    var topList:[TopModel]?
+    var rankingList:[LBURankingModel]?
+    var topList:[LBUTopModel]?
 }
 
 extension Array: HandyJSON{}
