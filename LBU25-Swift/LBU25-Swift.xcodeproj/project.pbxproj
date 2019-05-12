@@ -19,6 +19,7 @@
 		3A612E062288E0D800593FF5 /* LBUWebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A612DFF2288E0D700593FF5 /* LBUWebController.swift */; };
 		3A612E072288E0D800593FF5 /* LBUBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A612E012288E0D700593FF5 /* LBUBaseController.swift */; };
 		3A612E082288E0D800593FF5 /* LBUNaviController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A612E032288E0D700593FF5 /* LBUNaviController.swift */; };
+		3A612E0B2288E29200593FF5 /* LBUBaseSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A612E0A2288E29200593FF5 /* LBUBaseSearchController.swift */; };
 		3AB53E4322865F4100302A5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53E4222865F4100302A5B /* AppDelegate.swift */; };
 		3AB53E4522865F4100302A5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53E4422865F4100302A5B /* ViewController.swift */; };
 		3AB53E4822865F4100302A5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AB53E4622865F4100302A5B /* Main.storyboard */; };
@@ -71,6 +72,7 @@
 		3A612DFF2288E0D700593FF5 /* LBUWebController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBUWebController.swift; sourceTree = "<group>"; };
 		3A612E012288E0D700593FF5 /* LBUBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBUBaseController.swift; sourceTree = "<group>"; };
 		3A612E032288E0D700593FF5 /* LBUNaviController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBUNaviController.swift; sourceTree = "<group>"; };
+		3A612E0A2288E29200593FF5 /* LBUBaseSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUBaseSearchController.swift; sourceTree = "<group>"; };
 		3AB53E3F22865F4100302A5B /* LBU25-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LBU25-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB53E4222865F4100302A5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AB53E4422865F4100302A5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -199,6 +201,14 @@
 				3A612E032288E0D700593FF5 /* LBUNaviController.swift */,
 			);
 			path = "导航栏";
+			sourceTree = "<group>";
+		};
+		3A612E092288E26F00593FF5 /* 搜索 */ = {
+			isa = PBXGroup;
+			children = (
+				3A612E0A2288E29200593FF5 /* LBUBaseSearchController.swift */,
+			);
+			path = "搜索";
 			sourceTree = "<group>";
 		};
 		3AB53E3622865F4100302A5B = {
@@ -381,6 +391,7 @@
 		3AB53E9D228670A600302A5B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3A612E092288E26F00593FF5 /* 搜索 */,
 				3AB53EC9228692A600302A5B /* 订阅 */,
 				3AB53EC8228692A600302A5B /* 排行 */,
 				3AB53ECA228692A600302A5B /* 推荐 */,
@@ -821,6 +832,7 @@
 				3AB53EF3228696C700302A5B /* UIViewExtension.swift in Sources */,
 				3AB53E4322865F4100302A5B /* AppDelegate.swift in Sources */,
 				3AB53EF0228696C700302A5B /* UEmptyDataSet.swift in Sources */,
+				3A612E0B2288E29200593FF5 /* LBUBaseSearchController.swift in Sources */,
 				3AB53EF1228696C700302A5B /* ArrayExtensions.swift in Sources */,
 				3A612DF92288E07A00593FF5 /* LBUBaseTableViewHeaderFooterView.swift in Sources */,
 				3A14C8932288649300BA239B /* LBUTopCollectionViewCell.swift in Sources */,
