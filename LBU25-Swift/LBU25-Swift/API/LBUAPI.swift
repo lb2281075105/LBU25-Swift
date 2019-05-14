@@ -35,27 +35,36 @@ let ApiProvider = MoyaProvider<LBUApi>(requestClosure: timeoutClosure)
 let ApiLoadingProvider = MoyaProvider<LBUApi>(requestClosure: timeoutClosure, plugins: [LoadingPlugin])
 
 enum LBUApi {
-    case searchHot//搜索热门
-    case searchRelative(inputText: String)//相关搜索
-    case searchResult(argCon: Int, q: String)//搜索结果
-    
-    case boutiqueList(sexType: Int)//推荐列表
-    case special(argCon: Int, page: Int)//专题
-    case vipList//VIP列表
-    case subscribeList//订阅列表
-    case rankList//排行列表
-    
-    case cateList//分类列表
-    
-    case comicList(argCon: Int, argName: String, argValue: Int, page: Int)//漫画列表
-    
-    case guessLike//猜你喜欢
-    
-    case detailStatic(comicid: Int)//详情(基本)
-    case detailRealtime(comicid: Int)//详情(实时)
-    case commentList(object_id: Int, thread_id: Int, page: Int)//评论
-    
-    case chapter(chapter_id: Int)//章节内容
+    //搜索热门
+    case searchHot
+    //相关搜索
+    case searchRelative(inputText: String)
+    //搜索结果
+    case searchResult(argCon: Int, q: String)
+    //推荐列表
+    case boutiqueList(sexType: Int)
+    //专题
+    case special(argCon: Int, page: Int)
+    //VIP列表
+    case vipList
+    //订阅列表
+    case subscribeList
+    //排行列表
+    case rankList
+    //分类列表
+    case cateList
+    //漫画列表
+    case comicList(argCon: Int, argName: String, argValue: Int, page: Int)
+    //猜你喜欢
+    case guessLike
+    //详情(基本)
+    case detailStatic(comicid: Int)
+    //详情(实时)
+    case detailRealtime(comicid: Int)
+    //评论
+    case commentList(object_id: Int, thread_id: Int, page: Int)
+    //章节内容
+    case chapter(chapter_id: Int)
 }
 
 extension LBUApi: TargetType {
@@ -153,7 +162,7 @@ extension MoyaProvider {
         
         return request(target, completion: { (result) in
             guard let completion = completion else { return }
-            guard let returnData = try? result.value?.mapModel(ResponseData<T>.self) else {
+            guard let returnData = try? result.value?.mapModel(LBUResponseData<T>.self) else {
                 completion(nil)
                 return
             }

@@ -8,7 +8,7 @@
 
 import HandyJSON
 
-struct ImageModel: HandyJSON {
+struct LBUImageModel: HandyJSON {
     var location: String?
     var image_id: Int = 0
     var width: Int = 0
@@ -20,26 +20,26 @@ struct ImageModel: HandyJSON {
     var img50: String?
 }
 
-struct ChapterModel: HandyJSON {
+struct LBUChapterModel: HandyJSON {
     var status: Int = 0
     var chapter_id: Int = 0
     var type: Int = 0
-    var image_list: [ImageModel]?
+    var image_list: [LBUImageModel]?
 }
 
-struct AuthorModel: HandyJSON {
+struct LBUAuthorModel: HandyJSON {
     var id: Int = 0
     var avatar: String?
     var name: String?
 }
 
-struct ClassifyTagModel: HandyJSON {
+struct LBUClassifyTagModel: HandyJSON {
     var name: String?
     var argName: String?
     var argVal: Int = 0
 }
 
-struct ComicStaticModel: HandyJSON {
+struct LBUComicStaticModel: HandyJSON {
     var name: String?
     var comic_id: Int = 0
     var short_description: String?
@@ -57,19 +57,19 @@ struct ComicStaticModel: HandyJSON {
     var thread_id: Int = 0
     var last_update_week: String?
     var wideCover: String?
-    var classifyTags: [ClassifyTagModel]?
+    var classifyTags: [LBUClassifyTagModel]?
     var is_week: Bool = false
     var comic_color: String?
-    var author: AuthorModel?
+    var author: LBUAuthorModel?
     var is_dub: Bool = false
 }
 
-struct ImHightModel: HandyJSON {
+struct LBUImHightModel: HandyJSON {
     var height: Int = 0
     var width: Int = 0
 }
 
-struct ChapterStaticModel: HandyJSON {
+struct LBUChapterStaticModel: HandyJSON {
     var chapter_id: Int = 0
     var name: String?
     var image_total: Int = 0
@@ -81,24 +81,24 @@ struct ChapterStaticModel: HandyJSON {
     var zip_high_webp: Int = 0
     var is_new: Bool = false
     var has_locked_image: Bool = false
-    var imHightArr: [[ImHightModel]]?
+    var imHightArr: [[LBUImHightModel]]?
     var countImHightArr: Int = 0
 }
 
-struct OtherWorkModel: HandyJSON {
+struct LBUOtherWorkModel: HandyJSON {
     var comicId: Int = 0
     var coverUrl: String?
     var name: String?
     var passChapterNum: Int = 0
 }
 
-struct DetailStaticModel: HandyJSON {
-    var comic: ComicStaticModel?
-    var chapter_list: [ChapterStaticModel]?
-    var otherWorks: [OtherWorkModel]?
+struct LBUDetailStaticModel: HandyJSON {
+    var comic: LBUComicStaticModel?
+    var chapter_list: [LBUChapterStaticModel]?
+    var otherWorks: [LBUOtherWorkModel]?
 }
 
-struct ComicRealtimeModel: HandyJSON {
+struct LBUComicRealtimeModel: HandyJSON {
     var comic_id: Int = 0
     var user_id: Int = 0
     var status: Int = 0
@@ -116,7 +116,7 @@ struct ComicRealtimeModel: HandyJSON {
     var is_auto_buy: Bool = false
 }
 
-struct ChapterRealtimeModel: HandyJSON {
+struct LBUChapterRealtimeModel: HandyJSON {
     var vip_images: Int = 0
     var is_view: Bool = false
     var chapter_id: Int = 0
@@ -126,18 +126,18 @@ struct ChapterRealtimeModel: HandyJSON {
     var is_free: Bool = false
 }
 
-struct DetailRealtimeModel: HandyJSON {
-    var comic: ComicRealtimeModel?
-    var chapter_list: [ChapterRealtimeModel]?
+struct LBUDetailRealtimeModel: HandyJSON {
+    var comic: LBUComicRealtimeModel?
+    var chapter_list: [LBUChapterRealtimeModel]?
 }
 
-struct GuessLikeModel: HandyJSON {
+struct LBUGuessLikeModel: HandyJSON {
     var normal: Bool = false
     var last_modified: Int = 0
-    var comics: [ComicModel]?
+    var comics: [LBUComicModel]?
 }
 
-struct LevelModel: HandyJSON {
+struct LBULevelModel: HandyJSON {
     var album_size: CGFloat = 0
     var exp_speed: Float = 0
     var favorite_num: Int = 0
@@ -148,7 +148,7 @@ struct LevelModel: HandyJSON {
     var wage: Int = 0
 }
 
-struct CommentModel: HandyJSON {
+struct LBUCommentModel: HandyJSON {
     var cate: Int = 0
     var color: String?
     var comic_author: Int = 0
@@ -175,7 +175,7 @@ struct CommentModel: HandyJSON {
     var is_delete: Bool = false
     var is_lock: Bool = false
     var is_up: Bool = false
-    var level: LevelModel?
+    var level: LBULevelModel?
     var likeCount: Int = 0
     var likeState: Int = 0
     var nickname: String?
@@ -188,9 +188,9 @@ struct CommentModel: HandyJSON {
     var vip_exp: Int = 0
 }
 
-struct CommentListModel: HandyJSON {
+struct LBUCommentListModel: HandyJSON {
     var commentCount: Int = 0
-    var commentList: [CommentModel]?
+    var commentList: [LBUCommentModel]?
     var hasMore: Bool = false
     var objectId: Int = 0
     var objectType: String?
@@ -199,30 +199,30 @@ struct CommentListModel: HandyJSON {
     var serverNextPage: Int = 0
 }
 
-struct SearchItemModel: HandyJSON {
+struct LBUSearchItemModel: HandyJSON {
     var comic_id: Int = 0
     var name: String?
     var bgColor: String?
 }
 
-struct SearchResultModel: HandyJSON {
+struct LBUSearchResultModel: HandyJSON {
     var comicNum: Int = 0
     var hasMore: Bool = false
     var page: Int = 0
-    var comics: [ComicModel]?
+    var comics: [LBUComicModel]?
 }
 
-struct HotItemsModel: HandyJSON {
-    var hotItems: [SearchItemModel]?
+struct LBUHotItemsModel: HandyJSON {
+    var hotItems: [LBUSearchItemModel]?
     var defaultSearch: String?
 }
 
-struct ExtModel: HandyJSON {
+struct LBUExtModel: HandyJSON {
     var key: String?
     var val: String?
 }
 
-struct ComicModel: HandyJSON {
+struct LBUComicModel: HandyJSON {
     var comicId: Int = 0
     var comic_id: Int = 0
     var cate_id: Int = 0
@@ -262,10 +262,10 @@ struct ComicModel: HandyJSON {
     var is_vip: Bool = false
     var isExpired: Bool = false
     var canToolBarShare: Bool = false
-    var ext: [ExtModel]?
+    var ext: [LBUExtModel]?
 }
 
-enum UComicType: Int, HandyJSONEnum {
+enum LBUComicType: Int, HandyJSONEnum {
     case none = 0
     case update = 3
     case thematic = 5
@@ -273,21 +273,21 @@ enum UComicType: Int, HandyJSONEnum {
     case billboard = 11
 }
 
-struct SpinnerModel: HandyJSON {
+struct LBUSpinnerModel: HandyJSON {
     var argCon: Int = 0
     var name: String?
     var conTag: String?
     
 }
 
-struct DefaultParametersModel: HandyJSON {
+struct LBUDefaultParametersModel: HandyJSON {
     var defaultSelection: Int = 0
     var defaultArgCon: Int = 0
     var defaultConTagType: String?
 }
 
-struct ComicListModel: HandyJSON {
-    var comicType: UComicType = .none
+struct LBUComicListModel: HandyJSON {
+    var comicType: LBUComicType = .none
     var canedit: Bool = false
     var sortId: Int = 0
     var titleIconUrl: String?
@@ -298,47 +298,47 @@ struct ComicListModel: HandyJSON {
     var argName: String?
     var argValue: Int = 0
     var argType: Int = 0
-    var comics:[ComicModel]?
+    var comics:[LBUComicModel]?
     var maxSize: Int = 0
     var canMore: Bool = false
     var hasMore: Bool = false
-    var spinnerList: [SpinnerModel]?
-    var defaultParameters: DefaultParametersModel?
+    var spinnerList: [LBUSpinnerModel]?
+    var defaultParameters: LBUDefaultParametersModel?
     var page: Int = 0
 }
 
-struct GalleryItemModel: HandyJSON {
+struct LBUGalleryItemModel: HandyJSON {
     var id: Int = 0
     var linkType: Int = 0
     var cover: String?
-    var ext: [ExtModel]?
+    var ext: [LBUExtModel]?
     var title: String?
     var content: String?
 }
 
-struct TextItemModel: HandyJSON {
+struct LBUTextItemModel: HandyJSON {
     var id: Int = 0
     var linkType: Int = 0
     var cover: String?
-    var ext: [ExtModel]?
+    var ext: [LBUExtModel]?
     var title: String?
     var content: String?
 }
 
 
-struct BoutiqueListModel: HandyJSON {
-    var galleryItems: [GalleryItemModel]?
-    var textItems: [TextItemModel]?
-    var comicLists: [ComicListModel]?
+struct LBUBoutiqueListModel: HandyJSON {
+    var galleryItems: [LBUGalleryItemModel]?
+    var textItems: [LBUTextItemModel]?
+    var comicLists: [LBUComicListModel]?
     var editTime: TimeInterval = 0
 }
 
-struct VipListModel: HandyJSON {
-    var newVipList: [ComicListModel]?
+struct LBUVipListModel: HandyJSON {
+    var newVipList: [LBUComicListModel]?
 }
 
-struct SubscribeListModel: HandyJSON {
-    var newSubscribeList: [ComicListModel]?
+struct LBUSubscribeListModel: HandyJSON {
+    var newSubscribeList: [LBUComicListModel]?
 }
 
 struct LBURankingModel: HandyJSON {
@@ -355,31 +355,31 @@ struct LBURankingModel: HandyJSON {
     var rankingType: Int = 0
 }
 
-struct RankinglistModel: HandyJSON {
+struct LBURankinglistModel: HandyJSON {
     var rankinglist: [LBURankingModel]?
 }
 
-struct TabModel: HandyJSON {
+struct LBUTabModel: HandyJSON {
     var argName: String?
     var argValue: Int = 0
     var argCon: Int = 0
     var tabTitle: String?
 }
 
-struct TopExtra: HandyJSON {
+struct LBUTopExtra: HandyJSON {
     var title: String?
-    var tabList: [TabModel]?
+    var tabList: [LBUTabModel]?
 }
 
 struct LBUTopModel: HandyJSON {
     var sortId: Int = 0
     var sortName: String?
     var cover: String?
-    var extra: TopExtra?
+    var extra: LBUTopExtra?
     var uiWeight: Int = 0
 }
 
-struct CateListModel: HandyJSON {
+struct LBUCateListModel: HandyJSON {
     var recommendSearch: String?
     var rankingList:[LBURankingModel]?
     var topList:[LBUTopModel]?
@@ -387,13 +387,13 @@ struct CateListModel: HandyJSON {
 
 extension Array: HandyJSON{}
 
-struct ReturnData<T: HandyJSON>: HandyJSON {
+struct LBUReturnData<T: HandyJSON>: HandyJSON {
     var message:String?
     var returnData: T?
     var stateCode: Int = 0
 }
 
-struct ResponseData<T: HandyJSON>: HandyJSON {
+struct LBUResponseData<T: HandyJSON>: HandyJSON {
     var code: Int = 0
-    var data: ReturnData<T>?
+    var data: LBUReturnData<T>?
 }

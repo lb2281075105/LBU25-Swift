@@ -52,7 +52,7 @@ class LBUCateController: LBUBaseController {
     }
     
     private func setupLoadData() {
-        ApiLoadingProvider.request(LBUApi.cateList, model: CateListModel.self) { (returnData) in
+        ApiLoadingProvider.request(LBUApi.cateList, model: LBUCateListModel.self) { (returnData) in
             self.collectionView.uempty?.allowShow = true
             
             self.searchString = returnData?.recommendSearch ?? ""
