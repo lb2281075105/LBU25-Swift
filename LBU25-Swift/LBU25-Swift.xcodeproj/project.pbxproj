@@ -14,6 +14,11 @@
 		3A162CDF228A6350006911C3 /* LBUBoardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A162CDD228A6350006911C3 /* LBUBoardCollectionViewCell.swift */; };
 		3A162CE1228A6447006911C3 /* LBUComicCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A162CE0228A6447006911C3 /* LBUComicCollectionHeaderView.swift */; };
 		3A162CE3228A6677006911C3 /* LBUComicCollectionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A162CE2228A6677006911C3 /* LBUComicCollectionFooterView.swift */; };
+		3A162CF5228A8405006911C3 /* LBUComicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A162CF4228A8405006911C3 /* LBUComicController.swift */; };
+		3A162CF7228A8BBB006911C3 /* LBUContentDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A162CF6228A8BBB006911C3 /* LBUContentDetailController.swift */; };
+		3A162CFC228A8DAA006911C3 /* LBUChapterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A162CFB228A8DAA006911C3 /* LBUChapterController.swift */; };
+		3A162CFE228A8DC8006911C3 /* LBUCommentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A162CFD228A8DC8006911C3 /* LBUCommentController.swift */; };
+		3A162D00228A8E45006911C3 /* LBUComicHeadCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A162CFF228A8E45006911C3 /* LBUComicHeadCollectionCell.swift */; };
 		3A612DF02288DFF600593FF5 /* LBUBaseCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A612DEF2288DFF600593FF5 /* LBUBaseCollectionReusableView.swift */; };
 		3A612DF72288E07A00593FF5 /* LBUBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A612DF22288E07A00593FF5 /* LBUBaseTableViewCell.swift */; };
 		3A612DF82288E07A00593FF5 /* LBUBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A612DF42288E07A00593FF5 /* LBUBaseCollectionViewCell.swift */; };
@@ -71,6 +76,11 @@
 		3A162CDD228A6350006911C3 /* LBUBoardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBUBoardCollectionViewCell.swift; sourceTree = "<group>"; };
 		3A162CE0228A6447006911C3 /* LBUComicCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUComicCollectionHeaderView.swift; sourceTree = "<group>"; };
 		3A162CE2228A6677006911C3 /* LBUComicCollectionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUComicCollectionFooterView.swift; sourceTree = "<group>"; };
+		3A162CF4228A8405006911C3 /* LBUComicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUComicController.swift; sourceTree = "<group>"; };
+		3A162CF6228A8BBB006911C3 /* LBUContentDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUContentDetailController.swift; sourceTree = "<group>"; };
+		3A162CFB228A8DAA006911C3 /* LBUChapterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUChapterController.swift; sourceTree = "<group>"; };
+		3A162CFD228A8DC8006911C3 /* LBUCommentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUCommentController.swift; sourceTree = "<group>"; };
+		3A162CFF228A8E45006911C3 /* LBUComicHeadCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUComicHeadCollectionCell.swift; sourceTree = "<group>"; };
 		3A612DEF2288DFF600593FF5 /* LBUBaseCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUBaseCollectionReusableView.swift; sourceTree = "<group>"; };
 		3A612DF22288E07A00593FF5 /* LBUBaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBUBaseTableViewCell.swift; sourceTree = "<group>"; };
 		3A612DF42288E07A00593FF5 /* LBUBaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBUBaseCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -164,6 +174,30 @@
 				3A162CE2228A6677006911C3 /* LBUComicCollectionFooterView.swift */,
 			);
 			path = "推荐";
+			sourceTree = "<group>";
+		};
+		3A162CF8228A8D78006911C3 /* 目录 */ = {
+			isa = PBXGroup;
+			children = (
+				3A162CFB228A8DAA006911C3 /* LBUChapterController.swift */,
+			);
+			path = "目录";
+			sourceTree = "<group>";
+		};
+		3A162CF9228A8D78006911C3 /* 详情 */ = {
+			isa = PBXGroup;
+			children = (
+				3A162CF6228A8BBB006911C3 /* LBUContentDetailController.swift */,
+			);
+			path = "详情";
+			sourceTree = "<group>";
+		};
+		3A162CFA228A8D78006911C3 /* 评论 */ = {
+			isa = PBXGroup;
+			children = (
+				3A162CFD228A8DC8006911C3 /* LBUCommentController.swift */,
+			);
+			path = "评论";
 			sourceTree = "<group>";
 		};
 		3A612DF12288E07A00593FF5 /* 表视图基类 */ = {
@@ -378,7 +412,6 @@
 			isa = PBXGroup;
 			children = (
 				3AB53E99228670A600302A5B /* Controller */,
-				3AB53E9A228670A600302A5B /* Model */,
 				3AB53E9B228670A600302A5B /* View */,
 			);
 			path = "LBUComic(漫画详情)";
@@ -387,20 +420,18 @@
 		3AB53E99228670A600302A5B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3A162CF8228A8D78006911C3 /* 目录 */,
+				3A162CFA228A8D78006911C3 /* 评论 */,
+				3A162CF9228A8D78006911C3 /* 详情 */,
+				3A162CF4228A8405006911C3 /* LBUComicController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		3AB53E9A228670A600302A5B /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		3AB53E9B228670A600302A5B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3A162CFF228A8E45006911C3 /* LBUComicHeadCollectionCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -829,6 +860,7 @@
 				3A162CDF228A6350006911C3 /* LBUBoardCollectionViewCell.swift in Sources */,
 				3A612DF82288E07A00593FF5 /* LBUBaseCollectionViewCell.swift in Sources */,
 				3AB53EF9228696C700302A5B /* DictionaryExtension.swift in Sources */,
+				3A162CFC228A8DAA006911C3 /* LBUChapterController.swift in Sources */,
 				3A612E072288E0D800593FF5 /* LBUBaseController.swift in Sources */,
 				3AB53EB9228690C700302A5B /* LBUHomeController.swift in Sources */,
 				3AB53EC22286920700302A5B /* LBUBookDownloadController.swift in Sources */,
@@ -846,6 +878,7 @@
 				3AB53EFF2286995400302A5B /* LBUMineHeaderView.swift in Sources */,
 				3AB53EED228696C700302A5B /* ParallaxHeaderMode.swift in Sources */,
 				3AB53EC62286922D00302A5B /* LBUBookCollectionController.swift in Sources */,
+				3A162CFE228A8DC8006911C3 /* LBUCommentController.swift in Sources */,
 				3AB53EF4228696C700302A5B /* UIBarButtonItemExtension.swift in Sources */,
 				3AB53EEF228696C700302A5B /* ParallaxHeader.swift in Sources */,
 				3AB53ECE228692E900302A5B /* LBUHomeCommentController.swift in Sources */,
@@ -856,10 +889,13 @@
 				3AB53E4322865F4100302A5B /* AppDelegate.swift in Sources */,
 				3AB53EF0228696C700302A5B /* UEmptyDataSet.swift in Sources */,
 				3A612E0B2288E29200593FF5 /* LBUBaseSearchController.swift in Sources */,
+				3A162CF7228A8BBB006911C3 /* LBUContentDetailController.swift in Sources */,
+				3A162CF5228A8405006911C3 /* LBUComicController.swift in Sources */,
 				3A162CE3228A6677006911C3 /* LBUComicCollectionFooterView.swift in Sources */,
 				3AB53EF1228696C700302A5B /* ArrayExtensions.swift in Sources */,
 				3A612DF92288E07A00593FF5 /* LBUBaseTableViewHeaderFooterView.swift in Sources */,
 				3A14C8932288649300BA239B /* LBUTopCollectionViewCell.swift in Sources */,
+				3A162D00228A8E45006911C3 /* LBUComicHeadCollectionCell.swift in Sources */,
 				3AB53EF5228696C700302A5B /* UIDeviceExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

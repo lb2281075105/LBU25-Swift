@@ -22,12 +22,13 @@ class LBUWebController: LBUBaseController {
     }()
     
     lazy var progressView: UIProgressView = {
-        let pw = UIProgressView()
-        pw.trackImage = UIImage.init(named: "nav_bg")
-        pw.progressTintColor = UIColor.white
-        return pw
+        let progressView = UIProgressView()
+        progressView.trackImage = UIImage.init(named: "nav_bg")
+        progressView.progressTintColor = UIColor.white
+        return progressView
     }()
     
+    // 构造器
     convenience init(url: String?) {
         self.init()
         self.request = URLRequest(url: URL(string: url ?? "")!)

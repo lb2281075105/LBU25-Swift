@@ -78,14 +78,21 @@ class LBUHomeCommentController: LBUBaseController {
     private func didSelectBanner(index: NSInteger) {
         let item = galleryItems[index]
         if item.linkType == 2 {
-//            guard let url = item.ext?.compactMap({ return $0.key == "url" ? $0.val : nil }).joined() else { return }
-//            let vc = LBUWebViewController(url: url)
-//            navigationController?.pushViewController(vc, animated: true)
+            guard let url = item.ext?.compactMap({
+                return $0.key == "url" ? $0.val : nil
+            }).joined() else {
+                return
+            }
+            let vc = LBUWebController(url: url)
+            navigationController?.pushViewController(vc, animated: true)
         } else {
-//            guard let comicIdString = item.ext?.compactMap({ return $0.key == "comicId" ? $0.val : nil }).joined(),
-//                let comicId = Int(comicIdString) else { return }
-//            let vc = LBUComicViewController(comicid: comicId)
-//            navigationController?.pushViewController(vc, animated: true)
+            guard let comicIdString = item.ext?.compactMap({
+                return $0.key == "comicId" ? $0.val : nil
+            }).joined(),
+                
+                let comicId = Int(comicIdString) else { return }
+            let vc = LBUComicController(comicid: comicId)
+            navigationController?.pushViewController(vc, animated: true)
         }
     }
 
