@@ -10,6 +10,10 @@
 		04831C063D53659FDA2874F0 /* Pods_LBU25_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82C758FCA0ADD6978738FAD7 /* Pods_LBU25_Swift.framework */; };
 		3A14C8912288640900BA239B /* LBURankCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A14C8902288640900BA239B /* LBURankCollectionViewCell.swift */; };
 		3A14C8932288649300BA239B /* LBUTopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A14C8922288649300BA239B /* LBUTopCollectionViewCell.swift */; };
+		3A162CDE228A6350006911C3 /* LBUComicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A162CDC228A6350006911C3 /* LBUComicCollectionViewCell.swift */; };
+		3A162CDF228A6350006911C3 /* LBUBoardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A162CDD228A6350006911C3 /* LBUBoardCollectionViewCell.swift */; };
+		3A162CE1228A6447006911C3 /* LBUComicCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A162CE0228A6447006911C3 /* LBUComicCollectionHeaderView.swift */; };
+		3A162CE3228A6677006911C3 /* LBUComicCollectionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A162CE2228A6677006911C3 /* LBUComicCollectionFooterView.swift */; };
 		3A612DF02288DFF600593FF5 /* LBUBaseCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A612DEF2288DFF600593FF5 /* LBUBaseCollectionReusableView.swift */; };
 		3A612DF72288E07A00593FF5 /* LBUBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A612DF22288E07A00593FF5 /* LBUBaseTableViewCell.swift */; };
 		3A612DF82288E07A00593FF5 /* LBUBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A612DF42288E07A00593FF5 /* LBUBaseCollectionViewCell.swift */; };
@@ -63,6 +67,10 @@
 /* Begin PBXFileReference section */
 		3A14C8902288640900BA239B /* LBURankCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBURankCollectionViewCell.swift; sourceTree = "<group>"; };
 		3A14C8922288649300BA239B /* LBUTopCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUTopCollectionViewCell.swift; sourceTree = "<group>"; };
+		3A162CDC228A6350006911C3 /* LBUComicCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBUComicCollectionViewCell.swift; sourceTree = "<group>"; };
+		3A162CDD228A6350006911C3 /* LBUBoardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBUBoardCollectionViewCell.swift; sourceTree = "<group>"; };
+		3A162CE0228A6447006911C3 /* LBUComicCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUComicCollectionHeaderView.swift; sourceTree = "<group>"; };
+		3A162CE2228A6677006911C3 /* LBUComicCollectionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUComicCollectionFooterView.swift; sourceTree = "<group>"; };
 		3A612DEF2288DFF600593FF5 /* LBUBaseCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUBaseCollectionReusableView.swift; sourceTree = "<group>"; };
 		3A612DF22288E07A00593FF5 /* LBUBaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBUBaseTableViewCell.swift; sourceTree = "<group>"; };
 		3A612DF42288E07A00593FF5 /* LBUBaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBUBaseCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -137,6 +145,25 @@
 				73744AA17CA555B7A28ECD9D /* Pods-LBU25-Swift.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		3A162CD6228A6113006911C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3A162CDB228A6350006911C3 /* 推荐 */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3A162CDB228A6350006911C3 /* 推荐 */ = {
+			isa = PBXGroup;
+			children = (
+				3A162CDC228A6350006911C3 /* LBUComicCollectionViewCell.swift */,
+				3A162CDD228A6350006911C3 /* LBUBoardCollectionViewCell.swift */,
+				3A162CE0228A6447006911C3 /* LBUComicCollectionHeaderView.swift */,
+				3A162CE2228A6677006911C3 /* LBUComicCollectionFooterView.swift */,
+			);
+			path = "推荐";
 			sourceTree = "<group>";
 		};
 		3A612DF12288E07A00593FF5 /* 表视图基类 */ = {
@@ -381,9 +408,9 @@
 		3AB53E9C228670A600302A5B /* LBUHome(首页) */ = {
 			isa = PBXGroup;
 			children = (
+				3A162CD6228A6113006911C3 /* View */,
 				3AB53E9D228670A600302A5B /* Controller */,
 				3AB53E9E228670A600302A5B /* Model */,
-				3AB53E9F228670A600302A5B /* View */,
 			);
 			path = "LBUHome(首页)";
 			sourceTree = "<group>";
@@ -406,13 +433,6 @@
 			children = (
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		3AB53E9F228670A600302A5B /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		3AB53EA0228670A600302A5B /* LBUBook(书架) */ = {
@@ -790,6 +810,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A162CDE228A6350006911C3 /* LBUComicCollectionViewCell.swift in Sources */,
 				3AB53EFD228696C700302A5B /* UCollectionViewSectionBackgroundLayout.swift in Sources */,
 				3AB53EC42286922000302A5B /* LBUBookDocumentController.swift in Sources */,
 				3A612E062288E0D800593FF5 /* LBUWebController.swift in Sources */,
@@ -798,12 +819,14 @@
 				3AB53EF7228696C700302A5B /* DispatchQueueExtension.swift in Sources */,
 				3AB53EFB228696C700302A5B /* UNoticeBar.swift in Sources */,
 				3AB53EF6228696C700302A5B /* UIImageExtensions.swift in Sources */,
+				3A162CE1228A6447006911C3 /* LBUComicCollectionHeaderView.swift in Sources */,
 				3AB53EB72286908800302A5B /* LBUBookController.swift in Sources */,
 				3AB53EEC228696C700302A5B /* URefresh.swift in Sources */,
 				3AB53EF8228696C700302A5B /* StringExtension.swift in Sources */,
 				3AB53E9122866DC500302A5B /* LBUModel.swift in Sources */,
 				3AB53EFC228696C700302A5B /* UCollectionViewAlignedLayout.swift in Sources */,
 				3AB53EBD2286912A00302A5B /* LBUMineController.swift in Sources */,
+				3A162CDF228A6350006911C3 /* LBUBoardCollectionViewCell.swift in Sources */,
 				3A612DF82288E07A00593FF5 /* LBUBaseCollectionViewCell.swift in Sources */,
 				3AB53EF9228696C700302A5B /* DictionaryExtension.swift in Sources */,
 				3A612E072288E0D800593FF5 /* LBUBaseController.swift in Sources */,
@@ -833,6 +856,7 @@
 				3AB53E4322865F4100302A5B /* AppDelegate.swift in Sources */,
 				3AB53EF0228696C700302A5B /* UEmptyDataSet.swift in Sources */,
 				3A612E0B2288E29200593FF5 /* LBUBaseSearchController.swift in Sources */,
+				3A162CE3228A6677006911C3 /* LBUComicCollectionFooterView.swift in Sources */,
 				3AB53EF1228696C700302A5B /* ArrayExtensions.swift in Sources */,
 				3A612DF92288E07A00593FF5 /* LBUBaseTableViewHeaderFooterView.swift in Sources */,
 				3A14C8932288649300BA239B /* LBUTopCollectionViewCell.swift in Sources */,
