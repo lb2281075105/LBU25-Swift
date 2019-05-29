@@ -1,6 +1,6 @@
 # LBU25-Swift
 
-Swift5 精仿漫画类App,Moya+SwiftyJSON+HandyJSON网络框架和数据解析。数据来源部分真实接口获得
+Swift5 精仿漫画类App,Moya+SwiftyJSON+HandyJSON网络框架和数据解析。数据来源真实接口获得
 
 # 注意
 Swift5 精仿漫画类App 在xcode10.1以上版本才能运行成功
@@ -19,7 +19,7 @@ qq交流群: \n
 <img src="项目预览图/qq.jpeg" width="375">
 
 ###### 1. 首页
-<img src="项目预览图/1.首页.jpeg" width="375">
+<img src="项目预览图/1.首页.png" width="375">
 
 <img src="项目预览图/2.首页.png" width="375">
 
