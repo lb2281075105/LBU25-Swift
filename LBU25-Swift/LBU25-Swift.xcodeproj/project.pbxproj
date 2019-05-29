@@ -30,6 +30,9 @@
 		3A612E082288E0D800593FF5 /* LBUNaviController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A612E032288E0D700593FF5 /* LBUNaviController.swift */; };
 		3A612E0B2288E29200593FF5 /* LBUBaseSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A612E0A2288E29200593FF5 /* LBUBaseSearchController.swift */; };
 		3A73F7A4229E1BF4004A9C8C /* LBUDescriptionTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73F7A3229E1BF4004A9C8C /* LBUDescriptionTCell.swift */; };
+		3A73F7A6229E1E50004A9C8C /* LBUOtherWorksTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73F7A5229E1E50004A9C8C /* LBUOtherWorksTCell.swift */; };
+		3A73F7A9229E1F21004A9C8C /* LBUOtherWorksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73F7A8229E1F21004A9C8C /* LBUOtherWorksController.swift */; };
+		3A73F7AB229E1FBA004A9C8C /* LBUOtherWorksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73F7AA229E1FBA004A9C8C /* LBUOtherWorksCollectionViewCell.swift */; };
 		3AB53E4322865F4100302A5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53E4222865F4100302A5B /* AppDelegate.swift */; };
 		3AB53E4522865F4100302A5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53E4422865F4100302A5B /* ViewController.swift */; };
 		3AB53E4822865F4100302A5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AB53E4622865F4100302A5B /* Main.storyboard */; };
@@ -93,6 +96,9 @@
 		3A612E032288E0D700593FF5 /* LBUNaviController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBUNaviController.swift; sourceTree = "<group>"; };
 		3A612E0A2288E29200593FF5 /* LBUBaseSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUBaseSearchController.swift; sourceTree = "<group>"; };
 		3A73F7A3229E1BF4004A9C8C /* LBUDescriptionTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUDescriptionTCell.swift; sourceTree = "<group>"; };
+		3A73F7A5229E1E50004A9C8C /* LBUOtherWorksTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUOtherWorksTCell.swift; sourceTree = "<group>"; };
+		3A73F7A8229E1F21004A9C8C /* LBUOtherWorksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUOtherWorksController.swift; sourceTree = "<group>"; };
+		3A73F7AA229E1FBA004A9C8C /* LBUOtherWorksCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUOtherWorksCollectionViewCell.swift; sourceTree = "<group>"; };
 		3AB53E3F22865F4100302A5B /* LBU25-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LBU25-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB53E4222865F4100302A5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AB53E4422865F4100302A5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -189,6 +195,7 @@
 		3A162CF9228A8D78006911C3 /* 详情 */ = {
 			isa = PBXGroup;
 			children = (
+				3A73F7A7229E1EF2004A9C8C /* 其他作品 */,
 				3A162CF6228A8BBB006911C3 /* LBUContentDetailController.swift */,
 			);
 			path = "详情";
@@ -278,8 +285,18 @@
 			isa = PBXGroup;
 			children = (
 				3A73F7A3229E1BF4004A9C8C /* LBUDescriptionTCell.swift */,
+				3A73F7A5229E1E50004A9C8C /* LBUOtherWorksTCell.swift */,
 			);
 			path = "详情页";
+			sourceTree = "<group>";
+		};
+		3A73F7A7229E1EF2004A9C8C /* 其他作品 */ = {
+			isa = PBXGroup;
+			children = (
+				3A73F7A8229E1F21004A9C8C /* LBUOtherWorksController.swift */,
+				3A73F7AA229E1FBA004A9C8C /* LBUOtherWorksCollectionViewCell.swift */,
+			);
+			path = "其他作品";
 			sourceTree = "<group>";
 		};
 		3AB53E3622865F4100302A5B = {
@@ -854,6 +871,7 @@
 			files = (
 				3A162CDE228A6350006911C3 /* LBUComicCollectionViewCell.swift in Sources */,
 				3AB53EFD228696C700302A5B /* UCollectionViewSectionBackgroundLayout.swift in Sources */,
+				3A73F7A6229E1E50004A9C8C /* LBUOtherWorksTCell.swift in Sources */,
 				3AB53EC42286922000302A5B /* LBUBookDocumentController.swift in Sources */,
 				3A612E062288E0D800593FF5 /* LBUWebController.swift in Sources */,
 				3A612DF02288DFF600593FF5 /* LBUBaseCollectionReusableView.swift in Sources */,
@@ -882,6 +900,7 @@
 				3AB53E8C22866D2800302A5B /* LBUAPI.swift in Sources */,
 				3A612E082288E0D800593FF5 /* LBUNaviController.swift in Sources */,
 				3A612DF72288E07A00593FF5 /* LBUBaseTableViewCell.swift in Sources */,
+				3A73F7A9229E1F21004A9C8C /* LBUOtherWorksController.swift in Sources */,
 				3AB53EF2228696C700302A5B /* UIColorExtension.swift in Sources */,
 				3A612E042288E0D800593FF5 /* LBUPageController.swift in Sources */,
 				3AB53EEE228696C700302A5B /* UIScrollView+ParallaxHeader.swift in Sources */,
@@ -892,6 +911,7 @@
 				3AB53EC62286922D00302A5B /* LBUBookCollectionController.swift in Sources */,
 				3A162CFE228A8DC8006911C3 /* LBUCommentController.swift in Sources */,
 				3AB53EF4228696C700302A5B /* UIBarButtonItemExtension.swift in Sources */,
+				3A73F7AB229E1FBA004A9C8C /* LBUOtherWorksCollectionViewCell.swift in Sources */,
 				3AB53EEF228696C700302A5B /* ParallaxHeader.swift in Sources */,
 				3AB53ECE228692E900302A5B /* LBUHomeCommentController.swift in Sources */,
 				3AB53ED0228692FF00302A5B /* LBUHomeRankController.swift in Sources */,

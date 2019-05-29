@@ -25,7 +25,7 @@ class LBUContentDetailController: LBUBaseController {
         tableView.dataSource = self
         tableView.separatorStyle = .none
         tableView.register(cellType: LBUDescriptionTCell.self)
-//        tableView.register(cellType: UOtherWorksTCell.self)
+        tableView.register(cellType: LBUOtherWorksTCell.self)
 //        tableView.register(cellType: UTicketTCell.self)
 //        tableView.register(cellType: UGuessLikeTCell.self)
         return tableView
@@ -84,12 +84,12 @@ extension LBUContentDetailController: UITableViewDelegate, UITableViewDataSource
             let cell = tableView.dequeueReusableCell(for: indexPath, cellType: LBUDescriptionTCell.self)
             cell.model = detailStatic
             return cell
+        } else if indexPath.section == 1 {
+            let cell = tableView.dequeueReusableCell(for: indexPath, cellType: LBUOtherWorksTCell.self)
+            cell.model = detailStatic
+            return cell
         }
-//        } else if indexPath.section == 1 {
-//            let cell = tableView.dequeueReusableCell(for: indexPath, cellType: UOtherWorksTCell.self)
-//            cell.model = detailStatic
-//            return cell
-//        } else if indexPath.section == 2 {
+//        else if indexPath.section == 2 {
 //            let cell = tableView.dequeueReusableCell(for: indexPath, cellType: UTicketTCell.self)
 //            cell.model = detailRealtime
 //            return cell
@@ -106,10 +106,10 @@ extension LBUContentDetailController: UITableViewDelegate, UITableViewDataSource
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        if indexPath.section == 1 {
-//            let vc = UOtherWorksViewController(otherWorks: detailStatic?.otherWorks)
-//            navigationController?.pushViewController(vc, animated: true)
-//        }
+        if indexPath.section == 1 {
+            let vc = LBUOtherWorksController(otherWorks: detailStatic?.otherWorks)
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
 
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
