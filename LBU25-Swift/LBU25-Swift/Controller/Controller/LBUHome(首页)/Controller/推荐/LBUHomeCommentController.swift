@@ -25,7 +25,7 @@ class LBUHomeCommentController: LBUBaseController {
         cycleScrollView.autoScrollTimeInterval = 6
         cycleScrollView.placeHolderImage = UIImage(named: "normal_placeholder")
         cycleScrollView.coverImage = UIImage()
-        cycleScrollView.pageControlPosition = .right
+        cycleScrollView.pageControlPosition = .center
         cycleScrollView.pageControlBottom = 20
         cycleScrollView.titleBackgroundColor = UIColor.clear
         // 点击 item 回调
@@ -165,13 +165,14 @@ extension LBUHomeCommentController: UCollectionViewSectionBackgroundLayoutDelega
             headerView.titleLabel.text = comicList.itemTitle
             headerView.moreActionClosure { [weak self] in
 //                if comicList.comicType == .thematic {
-//                    let vc = UPageViewController(titles: ["漫画",
+//                    let vc = LBUPageController(titles: ["漫画",
 //                                                          "次元"],
 //                                                 vcs: [USpecialViewController(argCon: 2),
 //                                                       USpecialViewController(argCon: 4)],
 //                                                 pageStyle: .navgationBarSegment)
 //                    self?.navigationController?.pushViewController(vc, animated: true)
-//                } else if comicList.comicType == .animation {
+//                }
+//                else if comicList.comicType == .animation {
 //                    let vc = UWebViewController(url: "http://m.u17.com/wap/cartoon/list")
 //                    vc.title = "动画"
 //                    self?.navigationController?.pushViewController(vc, animated: true)
@@ -247,7 +248,7 @@ extension LBUHomeCommentController: UCollectionViewSectionBackgroundLayoutDelega
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let comicList = comicLists[indexPath.section]
         guard let item = comicList.comics?[indexPath.row] else { return }
-
+        
 //        if comicList.comicType == .billboard {
 //            let vc = UComicListViewController(argName: item.argName,
 //                                              argValue: item.argValue)

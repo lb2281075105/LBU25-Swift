@@ -50,8 +50,8 @@ class LBUComicController: LBUBaseController {
                                    pageStyle: .topTabBar)
     }()
     
-    private lazy var headView: LBUComicHeadCollectionCell = {
-        return LBUComicHeadCollectionCell(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: navigationBarY + 150))
+    private lazy var headView: LBUComicHeadView = {
+        return LBUComicHeadView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: navigationBarY + 150))
     }()
     
     private var detailStatic: LBUDetailStaticModel?
@@ -84,7 +84,7 @@ class LBUComicController: LBUBaseController {
         ApiLoadingProvider.request(LBUApi.detailStatic(comicid: comicid),
                                    model: LBUDetailStaticModel.self) { [weak self] (detailStatic) in
                                     self?.detailStatic = detailStatic
-//                                    self?.headView.detailStatic = detailStatic?.comic
+                                    self?.headView.detailStatic = detailStatic?.comic
                                     
 //                                    self?.detailVC.detailStatic = detailStatic
 //                                    self?.chapterVC.detailStatic = detailStatic
