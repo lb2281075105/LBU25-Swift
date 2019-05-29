@@ -66,17 +66,17 @@ class LBUComicHeadView: UIView {
         return totalLabel
     }()
     
-    private lazy var thmemView: UICollectionView = {
+    private lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.minimumInteritemSpacing = 5
         layout.itemSize = CGSize(width: 40, height: 20)
         layout.scrollDirection = .horizontal
-        let thmemView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
-        thmemView.backgroundColor = UIColor.clear
-        thmemView.dataSource = self
-        thmemView.showsHorizontalScrollIndicator = false
-        thmemView.register(cellType: LBUComicHeadCollectionCell.self)
-        return thmemView
+        let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
+        collectionView.backgroundColor = UIColor.clear
+        collectionView.dataSource = self
+        collectionView.showsHorizontalScrollIndicator = false
+        collectionView.register(cellType: LBUComicHeadCollectionCell.self)
+        return collectionView
     }()
     
     private var themes: [String]?
@@ -125,8 +125,8 @@ class LBUComicHeadView: UIView {
             make.top.equalTo(authorLabel.snp.bottom).offset(10)
         }
         
-        bgView.addSubview(thmemView)
-        thmemView.snp.makeConstraints { make in
+        bgView.addSubview(collectionView)
+        collectionView.snp.makeConstraints { make in
             make.left.equalTo(totalLabel)
             make.height.equalTo(30)
             make.right.greaterThanOrEqualToSuperview().offset(-20)
@@ -142,7 +142,7 @@ class LBUComicHeadView: UIView {
             nameLabel.text = detailStatic.name
             authorLabel.text = detailStatic.author?.name
             themes = detailStatic.theme_ids ?? []
-            thmemView.reloadData()
+            collectionView.reloadData()
         }
     }
     

@@ -24,7 +24,7 @@ class LBUComicController: LBUBaseController {
     
     private lazy var detailVC: LBUContentDetailController = {
         let detailVC = LBUContentDetailController()
-//        detailVC.delegate = self
+        detailVC.delegate = self
         return detailVC
     }()
 
@@ -86,7 +86,7 @@ class LBUComicController: LBUBaseController {
                                     self?.detailStatic = detailStatic
                                     self?.headView.detailStatic = detailStatic?.comic
                                     
-//                                    self?.detailVC.detailStatic = detailStatic
+                                    self?.detailVC.detailStatic = detailStatic
 //                                    self?.chapterVC.detailStatic = detailStatic
 //                                    self?.commentVC.detailStatic = detailStatic
 //
@@ -104,9 +104,9 @@ class LBUComicController: LBUBaseController {
         ApiProvider.request(LBUApi.detailRealtime(comicid: comicid),
                             model: LBUDetailRealtimeModel.self) { [weak self] (returnData) in
                                 self?.detailRealtime = returnData
-//                                self?.headView.detailRealtime = returnData?.comic
+                                self?.headView.detailRealtime = returnData?.comic
                                 
-//                                self?.detailVC.detailRealtime = returnData
+                                self?.detailVC.detailRealtime = returnData
 //                                self?.chapterVC.detailRealtime = returnData
                                 
                                 grpup.leave()
@@ -114,12 +114,12 @@ class LBUComicController: LBUBaseController {
         
         grpup.enter()
         ApiProvider.request(LBUApi.guessLike, model: LBUGuessLikeModel.self) { (returnData) in
-//            self.detailVC.guessLike = returnData
+            self.detailVC.guessLike = returnData
             grpup.leave()
         }
         
         grpup.notify(queue: DispatchQueue.main) {
-//            self.detailVC.reloadData()
+            self.detailVC.reloadData()
 //            self.chapterVC.reloadData()
 //            self.commentVC.reloadData()
         }
