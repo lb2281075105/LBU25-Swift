@@ -164,31 +164,31 @@ extension LBUHomeCommentController: UCollectionViewSectionBackgroundLayoutDelega
             headerView.iconView.kf.setImage(urlString: comicList.newTitleIconUrl)
             headerView.titleLabel.text = comicList.itemTitle
             headerView.moreActionClosure { [weak self] in
-//                if comicList.comicType == .thematic {
+                if comicList.comicType == .thematic {
 //                    let vc = LBUPageController(titles: ["漫画",
 //                                                          "次元"],
 //                                                 vcs: [USpecialViewController(argCon: 2),
 //                                                       USpecialViewController(argCon: 4)],
 //                                                 pageStyle: .navgationBarSegment)
 //                    self?.navigationController?.pushViewController(vc, animated: true)
-//                }
-//                else if comicList.comicType == .animation {
-//                    let vc = UWebViewController(url: "http://m.u17.com/wap/cartoon/list")
-//                    vc.title = "动画"
-//                    self?.navigationController?.pushViewController(vc, animated: true)
-//                } else if comicList.comicType == .update {
+                }
+                else if comicList.comicType == .animation {
+                    let vc = LBUWebController(url: "http://m.u17.com/wap/cartoon/list")
+                    vc.title = "动画"
+                    self?.navigationController?.pushViewController(vc, animated: true)
+                } else if comicList.comicType == .update {
 //                    let vc = UUpdateListViewController(argCon: comicList.argCon,
 //                                                       argName: comicList.argName,
 //                                                       argValue: comicList.argValue)
 //                    vc.title = comicList.itemTitle
 //                    self?.navigationController?.pushViewController(vc, animated: true)
-//                } else {
-//                    let vc = UComicListViewController(argCon: comicList.argCon,
-//                                                      argName: comicList.argName,
-//                                                      argValue: comicList.argValue)
-//                    vc.title = comicList.itemTitle
-//                    self?.navigationController?.pushViewController(vc, animated: true)
-//                }
+                } else {
+                    let vc = LBUComicListController(argCon: comicList.argCon,
+                                                      argName: comicList.argName,
+                                                      argValue: comicList.argValue)
+                    vc.title = comicList.itemTitle
+                    self?.navigationController?.pushViewController(vc, animated: true)
+                }
             }
             return headerView
         } else {
@@ -249,21 +249,21 @@ extension LBUHomeCommentController: UCollectionViewSectionBackgroundLayoutDelega
         let comicList = comicLists[indexPath.section]
         guard let item = comicList.comics?[indexPath.row] else { return }
         
-//        if comicList.comicType == .billboard {
-//            let vc = UComicListViewController(argName: item.argName,
-//                                              argValue: item.argValue)
-//            vc.title = item.name
-//            navigationController?.pushViewController(vc, animated: true)
-//        } else {
-//            if item.linkType == 2 {
-//                guard let url = item.ext?.compactMap({ return $0.key == "url" ? $0.val : nil }).joined() else { return }
-//                let vc = UWebViewController(url: url)
-//                navigationController?.pushViewController(vc, animated: true)
-//            } else {
-//                let vc = UComicViewController(comicid: item.comicId)
-//                navigationController?.pushViewController(vc, animated: true)
-//            }
-//        }
+        if comicList.comicType == .billboard {
+            let vc = LBUComicListController(argName: item.argName,
+                                              argValue: item.argValue)
+            vc.title = item.name
+            navigationController?.pushViewController(vc, animated: true)
+        } else {
+            if item.linkType == 2 {
+                guard let url = item.ext?.compactMap({ return $0.key == "url" ? $0.val : nil }).joined() else { return }
+                let vc = LBUWebController(url: url)
+                navigationController?.pushViewController(vc, animated: true)
+            } else {
+                let vc = LBUComicController(comicid: item.comicId)
+                navigationController?.pushViewController(vc, animated: true)
+            }
+        }
     }
 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
