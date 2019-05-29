@@ -26,8 +26,8 @@ class LBUContentDetailController: LBUBaseController {
         tableView.separatorStyle = .none
         tableView.register(cellType: LBUDescriptionTCell.self)
         tableView.register(cellType: LBUOtherWorksTCell.self)
-//        tableView.register(cellType: UTicketTCell.self)
-//        tableView.register(cellType: UGuessLikeTCell.self)
+        tableView.register(cellType: LBUTicketTVCell.self)
+        tableView.register(cellType: LBUGuessLikeTVCell.self)
         return tableView
     }()
     
@@ -88,20 +88,19 @@ extension LBUContentDetailController: UITableViewDelegate, UITableViewDataSource
             let cell = tableView.dequeueReusableCell(for: indexPath, cellType: LBUOtherWorksTCell.self)
             cell.model = detailStatic
             return cell
+        }else if indexPath.section == 2 {
+            let cell = tableView.dequeueReusableCell(for: indexPath, cellType: LBUTicketTVCell.self)
+            cell.model = detailRealtime
+            return cell
+        }else {
+            let cell = tableView.dequeueReusableCell(for: indexPath, cellType: LBUGuessLikeTVCell.self)
+            cell.model = guessLike
+            cell.didSelectClosure { [weak self] (comic) in
+                let vc = LBUComicController(comicid: comic.comic_id)
+                self?.navigationController?.pushViewController(vc, animated: true)
+            }
+            return cell
         }
-//        else if indexPath.section == 2 {
-//            let cell = tableView.dequeueReusableCell(for: indexPath, cellType: UTicketTCell.self)
-//            cell.model = detailRealtime
-//            return cell
-//        } else {
-//            let cell = tableView.dequeueReusableCell(for: indexPath, cellType: UGuessLikeTCell.self)
-//            cell.model = guessLike
-//            cell.didSelectClosure { [weak self] (comic) in
-//                let vc = UComicViewController(comicid: comic.comic_id)
-//                self?.navigationController?.pushViewController(vc, animated: true)
-//            }
-//            return cell
-//        }
         return UITableViewCell.init()
     }
 

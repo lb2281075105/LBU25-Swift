@@ -33,6 +33,8 @@
 		3A73F7A6229E1E50004A9C8C /* LBUOtherWorksTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73F7A5229E1E50004A9C8C /* LBUOtherWorksTCell.swift */; };
 		3A73F7A9229E1F21004A9C8C /* LBUOtherWorksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73F7A8229E1F21004A9C8C /* LBUOtherWorksController.swift */; };
 		3A73F7AB229E1FBA004A9C8C /* LBUOtherWorksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73F7AA229E1FBA004A9C8C /* LBUOtherWorksCollectionViewCell.swift */; };
+		3A73F7AD229E20CF004A9C8C /* LBUTicketTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73F7AC229E20CF004A9C8C /* LBUTicketTVCell.swift */; };
+		3A73F7AF229E216F004A9C8C /* LBUGuessLikeTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73F7AE229E216F004A9C8C /* LBUGuessLikeTVCell.swift */; };
 		3AB53E4322865F4100302A5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53E4222865F4100302A5B /* AppDelegate.swift */; };
 		3AB53E4522865F4100302A5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53E4422865F4100302A5B /* ViewController.swift */; };
 		3AB53E4822865F4100302A5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AB53E4622865F4100302A5B /* Main.storyboard */; };
@@ -99,6 +101,8 @@
 		3A73F7A5229E1E50004A9C8C /* LBUOtherWorksTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUOtherWorksTCell.swift; sourceTree = "<group>"; };
 		3A73F7A8229E1F21004A9C8C /* LBUOtherWorksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUOtherWorksController.swift; sourceTree = "<group>"; };
 		3A73F7AA229E1FBA004A9C8C /* LBUOtherWorksCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUOtherWorksCollectionViewCell.swift; sourceTree = "<group>"; };
+		3A73F7AC229E20CF004A9C8C /* LBUTicketTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUTicketTVCell.swift; sourceTree = "<group>"; };
+		3A73F7AE229E216F004A9C8C /* LBUGuessLikeTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUGuessLikeTVCell.swift; sourceTree = "<group>"; };
 		3AB53E3F22865F4100302A5B /* LBU25-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LBU25-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB53E4222865F4100302A5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AB53E4422865F4100302A5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -286,6 +290,8 @@
 			children = (
 				3A73F7A3229E1BF4004A9C8C /* LBUDescriptionTCell.swift */,
 				3A73F7A5229E1E50004A9C8C /* LBUOtherWorksTCell.swift */,
+				3A73F7AC229E20CF004A9C8C /* LBUTicketTVCell.swift */,
+				3A73F7AE229E216F004A9C8C /* LBUGuessLikeTVCell.swift */,
 			);
 			path = "详情页";
 			sourceTree = "<group>";
@@ -885,10 +891,12 @@
 				3AB53EF8228696C700302A5B /* StringExtension.swift in Sources */,
 				3AB53E9122866DC500302A5B /* LBUModel.swift in Sources */,
 				3AB53EFC228696C700302A5B /* UCollectionViewAlignedLayout.swift in Sources */,
+				3A73F7AF229E216F004A9C8C /* LBUGuessLikeTVCell.swift in Sources */,
 				3AB53EBD2286912A00302A5B /* LBUMineController.swift in Sources */,
 				3A162CDF228A6350006911C3 /* LBUBoardCollectionViewCell.swift in Sources */,
 				3A612DF82288E07A00593FF5 /* LBUBaseCollectionViewCell.swift in Sources */,
 				3AB53EF9228696C700302A5B /* DictionaryExtension.swift in Sources */,
+				3A73F7AD229E20CF004A9C8C /* LBUTicketTVCell.swift in Sources */,
 				3A162CFC228A8DAA006911C3 /* LBUChapterController.swift in Sources */,
 				3A612E072288E0D800593FF5 /* LBUBaseController.swift in Sources */,
 				3AB53EB9228690C700302A5B /* LBUHomeController.swift in Sources */,
