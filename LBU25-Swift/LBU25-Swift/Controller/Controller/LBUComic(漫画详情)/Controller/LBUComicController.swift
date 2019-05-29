@@ -40,7 +40,7 @@ class LBUComicController: LBUBaseController {
     
     private lazy var commentVC: LBUCommentController = {
         let commentVC = LBUCommentController()
-//        commentVC.delegate = self
+        commentVC.delegate = self
         return commentVC
     }()
     
@@ -88,14 +88,14 @@ class LBUComicController: LBUBaseController {
                                     
                                     self?.detailVC.detailStatic = detailStatic
                                     self?.chapterVC.detailStatic = detailStatic
-//                                    self?.commentVC.detailStatic = detailStatic
-//
+                                    self?.commentVC.detailStatic = detailStatic
+
                                     ApiProvider.request(LBUApi.commentList(object_id: detailStatic?.comic?.comic_id ?? 0,
                                                                          thread_id: detailStatic?.comic?.thread_id ?? 0,
                                                                          page: -1),
                                                         model: LBUCommentListModel.self,
                                                         completion: { [weak self] (commentList) in
-//                                                            self?.commentVC.commentList = commentList
+                                                            self?.commentVC.commentList = commentList
                                                             grpup.leave()
                                     })
         }
@@ -121,7 +121,7 @@ class LBUComicController: LBUBaseController {
         grpup.notify(queue: DispatchQueue.main) {
             self.detailVC.reloadData()
             self.chapterVC.reloadData()
-//            self.commentVC.reloadData()
+            self.commentVC.reloadData()
         }
     }
     

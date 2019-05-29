@@ -41,6 +41,7 @@
 		3A73F7BC229E27E4004A9C8C /* LBUReadTopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73F7BB229E27E4004A9C8C /* LBUReadTopBarView.swift */; };
 		3A73F7BE229E2845004A9C8C /* LBUReadBottomBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73F7BD229E2845004A9C8C /* LBUReadBottomBarView.swift */; };
 		3A73F7C1229E2A1E004A9C8C /* LBUBaseCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73F7C0229E2A1E004A9C8C /* LBUBaseCollectionReusableView.swift */; };
+		3A73F7C3229E2CF6004A9C8C /* LBUCommentTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73F7C2229E2CF6004A9C8C /* LBUCommentTVCell.swift */; };
 		3AB53E4322865F4100302A5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53E4222865F4100302A5B /* AppDelegate.swift */; };
 		3AB53E4522865F4100302A5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53E4422865F4100302A5B /* ViewController.swift */; };
 		3AB53E4822865F4100302A5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AB53E4622865F4100302A5B /* Main.storyboard */; };
@@ -115,6 +116,7 @@
 		3A73F7BB229E27E4004A9C8C /* LBUReadTopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUReadTopBarView.swift; sourceTree = "<group>"; };
 		3A73F7BD229E2845004A9C8C /* LBUReadBottomBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUReadBottomBarView.swift; sourceTree = "<group>"; };
 		3A73F7C0229E2A1E004A9C8C /* LBUBaseCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBUBaseCollectionReusableView.swift; sourceTree = "<group>"; };
+		3A73F7C2229E2CF6004A9C8C /* LBUCommentTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUCommentTVCell.swift; sourceTree = "<group>"; };
 		3AB53E3F22865F4100302A5B /* LBU25-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LBU25-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB53E4222865F4100302A5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AB53E4422865F4100302A5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -321,6 +323,7 @@
 		3A73F7B0229E2372004A9C8C /* 评论页 */ = {
 			isa = PBXGroup;
 			children = (
+				3A73F7C2229E2CF6004A9C8C /* LBUCommentTVCell.swift */,
 			);
 			path = "评论页";
 			sourceTree = "<group>";
@@ -928,6 +931,7 @@
 				3A162CDE228A6350006911C3 /* LBUComicCollectionViewCell.swift in Sources */,
 				3AB53EFD228696C700302A5B /* UCollectionViewSectionBackgroundLayout.swift in Sources */,
 				3A73F7A6229E1E50004A9C8C /* LBUOtherWorksTCell.swift in Sources */,
+				3A73F7C3229E2CF6004A9C8C /* LBUCommentTVCell.swift in Sources */,
 				3AB53EC42286922000302A5B /* LBUBookDocumentController.swift in Sources */,
 				3A612E062288E0D800593FF5 /* LBUWebController.swift in Sources */,
 				3A73F7B5229E258C004A9C8C /* LBUChapterCollectionViewCell.swift in Sources */,
