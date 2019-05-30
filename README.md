@@ -5,7 +5,7 @@ Swift5 精仿漫画类App,Moya+SwiftyJSON+HandyJSON网络框架和数据解析�
 # 注意
 Swift5 精仿漫画类App 在xcode10.1以上版本才能运行成功
 
-喜马拉雅App:主要分为 首页 分类 书架 我的 四个大模块,详情可以查看截图
+精仿漫画类App:主要分为 首页 分类 书架 我的 四个大模块,详情可以查看截图,适配iOS11及iPhone X,使用了第三方框架SnapKit, Then, Moya, Alamofire, HandyJSON, Kingfisher, Reusable, LLCycleScrollView, MJRefresh, MBProgressHUD, HMSegmentedControl, IQKeyboardManagerSwift等,代码使用了Swift和OC混合开发,此项目方便初学者模仿学习使用,如果该项目对你的Swift学习有帮助,欢迎star哦,谢谢。
 
 <!--[简书地址](https://www.jianshu.com/p/f2be1fcb77d3)-->
 
@@ -55,3 +55,5 @@ qq交流群: \n
 
 ###### 11. 排行
 <img src="项目预览图/15.排行.png" width="375">
+
+如有侵权,造成影响,请联系本人删除,谢谢
