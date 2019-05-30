@@ -78,4 +78,10 @@ qq交流群: \n
 ###### 13. 排行
 <img src="项目预览图/17.搜索页.png" width="375">
 
+
+#### 1️⃣小伙伴们请狠狠猛戳 Github[喜马拉雅项目-Swift5版本](https://github.com/lb2281075105/LBXMLYFM-Swift.git)
+
+#### 2️⃣公众号: liubo920205 后期还会有新项目更新,又需要的可以关注一下哦 \n
+<img src="项目预览图/wechat.jpg" width="375">
+
 如有侵权,造成影响,请联系本人删除,谢谢
