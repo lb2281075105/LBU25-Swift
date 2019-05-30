@@ -165,23 +165,23 @@ extension LBUHomeCommentController: UCollectionViewSectionBackgroundLayoutDelega
             headerView.titleLabel.text = comicList.itemTitle
             headerView.moreActionClosure { [weak self] in
                 if comicList.comicType == .thematic {
-//                    let vc = LBUPageController(titles: ["漫画",
-//                                                          "次元"],
-//                                                 vcs: [USpecialViewController(argCon: 2),
-//                                                       USpecialViewController(argCon: 4)],
-//                                                 pageStyle: .navgationBarSegment)
-//                    self?.navigationController?.pushViewController(vc, animated: true)
+                    let vc = LBUPageController(titles: ["漫画",
+                                                          "次元"],
+                                                 vcs: [LBUSpecialController(argCon: 2),
+                                                       LBUSpecialController(argCon: 4)],
+                                                 pageStyle: .navgationBarSegment)
+                    self?.navigationController?.pushViewController(vc, animated: true)
                 }
                 else if comicList.comicType == .animation {
                     let vc = LBUWebController(url: "http://m.u17.com/wap/cartoon/list")
                     vc.title = "动画"
                     self?.navigationController?.pushViewController(vc, animated: true)
                 } else if comicList.comicType == .update {
-//                    let vc = UUpdateListViewController(argCon: comicList.argCon,
-//                                                       argName: comicList.argName,
-//                                                       argValue: comicList.argValue)
-//                    vc.title = comicList.itemTitle
-//                    self?.navigationController?.pushViewController(vc, animated: true)
+                    let vc = LBUUpdateListController(argCon: comicList.argCon,
+                                                       argName: comicList.argName,
+                                                       argValue: comicList.argValue)
+                    vc.title = comicList.itemTitle
+                    self?.navigationController?.pushViewController(vc, animated: true)
                 } else {
                     let vc = LBUComicListController(argCon: comicList.argCon,
                                                       argName: comicList.argName,

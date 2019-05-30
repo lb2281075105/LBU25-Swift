@@ -43,8 +43,12 @@
 		3A73F7C1229E2A1E004A9C8C /* LBUBaseCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73F7C0229E2A1E004A9C8C /* LBUBaseCollectionReusableView.swift */; };
 		3A73F7C3229E2CF6004A9C8C /* LBUCommentTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73F7C2229E2CF6004A9C8C /* LBUCommentTVCell.swift */; };
 		3A73F7C5229E37FC004A9C8C /* LBUCateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73F7C4229E37FC004A9C8C /* LBUCateModel.swift */; };
-		3A73F7C8229E396C004A9C8C /* LBUComicListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73F7C7229E396C004A9C8C /* LBUComicListController.swift */; };
-		3A73F7CA229E4390004A9C8C /* LBUComicTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73F7C9229E4390004A9C8C /* LBUComicTVCell.swift */; };
+		3A73F7E4229F6A2A004A9C8C /* LBUComicTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73F7DF229F6A2A004A9C8C /* LBUComicTVCell.swift */; };
+		3A73F7E5229F6A2A004A9C8C /* LBUSpecialTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73F7E0229F6A2A004A9C8C /* LBUSpecialTVCell.swift */; };
+		3A73F7E6229F6A2A004A9C8C /* LBUComicListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73F7E2229F6A2A004A9C8C /* LBUComicListController.swift */; };
+		3A73F7E7229F6A2A004A9C8C /* LBUSpecialController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73F7E3229F6A2A004A9C8C /* LBUSpecialController.swift */; };
+		3A73F7E9229F6B73004A9C8C /* LBUUpdateListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73F7E8229F6B73004A9C8C /* LBUUpdateListController.swift */; };
+		3A73F7EB229F6BFB004A9C8C /* LBUUpdateTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73F7EA229F6BFB004A9C8C /* LBUUpdateTVCell.swift */; };
 		3AB53E4322865F4100302A5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53E4222865F4100302A5B /* AppDelegate.swift */; };
 		3AB53E4522865F4100302A5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB53E4422865F4100302A5B /* ViewController.swift */; };
 		3AB53E4822865F4100302A5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AB53E4622865F4100302A5B /* Main.storyboard */; };
@@ -121,8 +125,12 @@
 		3A73F7C0229E2A1E004A9C8C /* LBUBaseCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBUBaseCollectionReusableView.swift; sourceTree = "<group>"; };
 		3A73F7C2229E2CF6004A9C8C /* LBUCommentTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUCommentTVCell.swift; sourceTree = "<group>"; };
 		3A73F7C4229E37FC004A9C8C /* LBUCateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUCateModel.swift; sourceTree = "<group>"; };
-		3A73F7C7229E396C004A9C8C /* LBUComicListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUComicListController.swift; sourceTree = "<group>"; };
-		3A73F7C9229E4390004A9C8C /* LBUComicTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUComicTVCell.swift; sourceTree = "<group>"; };
+		3A73F7DF229F6A2A004A9C8C /* LBUComicTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBUComicTVCell.swift; sourceTree = "<group>"; };
+		3A73F7E0229F6A2A004A9C8C /* LBUSpecialTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBUSpecialTVCell.swift; sourceTree = "<group>"; };
+		3A73F7E2229F6A2A004A9C8C /* LBUComicListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBUComicListController.swift; sourceTree = "<group>"; };
+		3A73F7E3229F6A2A004A9C8C /* LBUSpecialController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBUSpecialController.swift; sourceTree = "<group>"; };
+		3A73F7E8229F6B73004A9C8C /* LBUUpdateListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUUpdateListController.swift; sourceTree = "<group>"; };
+		3A73F7EA229F6BFB004A9C8C /* LBUUpdateTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBUUpdateTVCell.swift; sourceTree = "<group>"; };
 		3AB53E3F22865F4100302A5B /* LBU25-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LBU25-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB53E4222865F4100302A5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AB53E4422865F4100302A5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -365,10 +373,30 @@
 		3A73F7C6229E384C004A9C8C /* 详情列表 */ = {
 			isa = PBXGroup;
 			children = (
-				3A73F7C7229E396C004A9C8C /* LBUComicListController.swift */,
-				3A73F7C9229E4390004A9C8C /* LBUComicTVCell.swift */,
+				3A73F7E1229F6A2A004A9C8C /* Controller */,
+				3A73F7DE229F6A2A004A9C8C /* View */,
 			);
 			path = "详情列表";
+			sourceTree = "<group>";
+		};
+		3A73F7DE229F6A2A004A9C8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3A73F7DF229F6A2A004A9C8C /* LBUComicTVCell.swift */,
+				3A73F7E0229F6A2A004A9C8C /* LBUSpecialTVCell.swift */,
+				3A73F7EA229F6BFB004A9C8C /* LBUUpdateTVCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3A73F7E1229F6A2A004A9C8C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3A73F7E2229F6A2A004A9C8C /* LBUComicListController.swift */,
+				3A73F7E3229F6A2A004A9C8C /* LBUSpecialController.swift */,
+				3A73F7E8229F6B73004A9C8C /* LBUUpdateListController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		3AB53E3622865F4100302A5B = {
@@ -945,6 +973,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A73F7EB229F6BFB004A9C8C /* LBUUpdateTVCell.swift in Sources */,
 				3A162CDE228A6350006911C3 /* LBUComicCollectionViewCell.swift in Sources */,
 				3AB53EFD228696C700302A5B /* UCollectionViewSectionBackgroundLayout.swift in Sources */,
 				3A73F7A6229E1E50004A9C8C /* LBUOtherWorksTCell.swift in Sources */,
@@ -952,6 +981,7 @@
 				3AB53EC42286922000302A5B /* LBUBookDocumentController.swift in Sources */,
 				3A612E062288E0D800593FF5 /* LBUWebController.swift in Sources */,
 				3A73F7B5229E258C004A9C8C /* LBUChapterCollectionViewCell.swift in Sources */,
+				3A73F7E5229F6A2A004A9C8C /* LBUSpecialTVCell.swift in Sources */,
 				3AB53E4522865F4100302A5B /* ViewController.swift in Sources */,
 				3AB53EF7228696C700302A5B /* DispatchQueueExtension.swift in Sources */,
 				3AB53EFB228696C700302A5B /* UNoticeBar.swift in Sources */,
@@ -975,15 +1005,18 @@
 				3AB53EC22286920700302A5B /* LBUBookDownloadController.swift in Sources */,
 				3A612E052288E0D800593FF5 /* LBUTabBarController.swift in Sources */,
 				3AB53EBB228690FD00302A5B /* LBUCateController.swift in Sources */,
+				3A73F7E4229F6A2A004A9C8C /* LBUComicTVCell.swift in Sources */,
 				3A73F7A4229E1BF4004A9C8C /* LBUDescriptionTCell.swift in Sources */,
 				3A73F7C1229E2A1E004A9C8C /* LBUBaseCollectionReusableView.swift in Sources */,
 				3AB53E9322866E4B00302A5B /* LBUGlobal.swift in Sources */,
 				3AB53E8C22866D2800302A5B /* LBUAPI.swift in Sources */,
 				3A612E082288E0D800593FF5 /* LBUNaviController.swift in Sources */,
+				3A73F7E9229F6B73004A9C8C /* LBUUpdateListController.swift in Sources */,
 				3A612DF72288E07A00593FF5 /* LBUBaseTableViewCell.swift in Sources */,
 				3A73F7A9229E1F21004A9C8C /* LBUOtherWorksController.swift in Sources */,
 				3A73F7B8229E2641004A9C8C /* LBUChapterReadController.swift in Sources */,
 				3AB53EF2228696C700302A5B /* UIColorExtension.swift in Sources */,
+				3A73F7E6229F6A2A004A9C8C /* LBUComicListController.swift in Sources */,
 				3A612E042288E0D800593FF5 /* LBUPageController.swift in Sources */,
 				3AB53EEE228696C700302A5B /* UIScrollView+ParallaxHeader.swift in Sources */,
 				3AB53ECC228692C200302A5B /* LBUHomeVIPController.swift in Sources */,
@@ -991,8 +1024,8 @@
 				3AB53EFA228696C700302A5B /* UHairPowder.swift in Sources */,
 				3AB53EFF2286995400302A5B /* LBUMineHeaderView.swift in Sources */,
 				3AB53EED228696C700302A5B /* ParallaxHeaderMode.swift in Sources */,
+				3A73F7E7229F6A2A004A9C8C /* LBUSpecialController.swift in Sources */,
 				3AB53EC62286922D00302A5B /* LBUBookCollectionController.swift in Sources */,
-				3A73F7C8229E396C004A9C8C /* LBUComicListController.swift in Sources */,
 				3A162CFE228A8DC8006911C3 /* LBUCommentController.swift in Sources */,
 				3AB53EF4228696C700302A5B /* UIBarButtonItemExtension.swift in Sources */,
 				3A73F7AB229E1FBA004A9C8C /* LBUOtherWorksCollectionViewCell.swift in Sources */,
@@ -1000,7 +1033,6 @@
 				3AB53ECE228692E900302A5B /* LBUHomeCommentController.swift in Sources */,
 				3AB53ED0228692FF00302A5B /* LBUHomeRankController.swift in Sources */,
 				3AB53ED22286931300302A5B /* LBUHomeSubscibeController.swift in Sources */,
-				3A73F7CA229E4390004A9C8C /* LBUComicTVCell.swift in Sources */,
 				3A14C8912288640900BA239B /* LBURankCollectionViewCell.swift in Sources */,
 				3A73F7BE229E2845004A9C8C /* LBUReadBottomBarView.swift in Sources */,
 				3AB53EF3228696C700302A5B /* UIViewExtension.swift in Sources */,
