@@ -23,7 +23,7 @@ class LBUHomeController: LBUPageController {
     }
     
     @objc private func searchButtonClick() {
-        navigationController?.pushViewController(LBUBaseSearchController(), animated: true)
+        navigationController?.pushViewController(LBUSearchController(), animated: true)
     }
 
 }
