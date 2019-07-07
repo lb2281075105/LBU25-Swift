@@ -16,7 +16,7 @@ Swift5 精仿漫画类App 在xcode10.1以上版本才能运行成功
 qq交流群: \n
 
 
-<img src="项目预览图/qq.jpeg" width="375">
+<img src="项目预览图/qq.png" width="375">
 
 
 ###### 0. 项目目录结构
