@@ -102,6 +102,30 @@ extension LBUBookController: UICollectionViewDelegateFlowLayout, UICollectionVie
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         // mark -- 增加
+        if indexPath.section == 0 {
+                   let model = topList[indexPath.row]
+                   var titles: [String] = []
+                   var vcs: [UIViewController] = []
+                   for tab in model.extra?.tabList ?? [] {
+                       guard let tabTitle = tab.tabTitle else { continue }
+                       titles.append(tabTitle)
+                       vcs.append(LBUComicListController(argCon: tab.argCon,
+                                                           argName: tab.argName,
+                                                           argValue: tab.argValue))
+                   }
+                   let vc = LBUPageController(titles: titles, vcs: vcs, pageStyle: .topTabBar)
+                   vc.title = model.sortName
+                   navigationController?.pushViewController(vc, animated: true)
+               }
+               
+               if indexPath.section == 1 {
+                   let model = rankList[indexPath.row]
+                   let vc = LBUComicListController(argCon: model.argCon,
+                                                     argName: model.argName,
+                                                     argValue: model.argValue)
+                   vc.title = model.sortName
+                   navigationController?.pushViewController(vc, animated: true)
+               }
     }
 }
 
