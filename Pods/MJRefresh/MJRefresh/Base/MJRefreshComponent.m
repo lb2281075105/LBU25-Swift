@@ -55,14 +55,13 @@
     [self removeObservers];
     
     if (newSuperview) { // 新的父控件
-        // 记录UIScrollView
-        _scrollView = (UIScrollView *)newSuperview;
-        
         // 设置宽度
-        self.mj_w = _scrollView.mj_w;
+        self.mj_w = newSuperview.mj_w;
         // 设置位置
         self.mj_x = -_scrollView.mj_insetL;
-    
+        
+        // 记录UIScrollView
+        _scrollView = (UIScrollView *)newSuperview;
         // 设置永远支持垂直弹簧效果
         _scrollView.alwaysBounceVertical = YES;
         // 记录UIScrollView最开始的contentInset
@@ -251,14 +250,22 @@
     return label;
 }
 
-- (CGFloat)mj_textWidth {
+- (CGFloat)mj_textWith {
     CGFloat stringWidth = 0;
     CGSize size = CGSizeMake(MAXFLOAT, MAXFLOAT);
     if (self.text.length > 0) {
-        stringWidth = [self.text boundingRectWithSize:size
-                                              options:NSStringDrawingUsesLineFragmentOrigin
-                                           attributes:@{NSFontAttributeName:self.font}
-                                              context:nil].size.width;
+#if defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && __IPHONE_OS_VERSION_MAX_ALLOWED >= 70000
+        stringWidth =[self.text
+                      boundingRectWithSize:size
+                      options:NSStringDrawingUsesLineFragmentOrigin
+                      attributes:@{NSFontAttributeName:self.font}
+                      context:nil].size.width;
+#else
+        
+        stringWidth = [self.text sizeWithFont:self.font
+                            constrainedToSize:size
+                                lineBreakMode:NSLineBreakByCharWrapping].width;
+#endif
     }
     return stringWidth;
 }

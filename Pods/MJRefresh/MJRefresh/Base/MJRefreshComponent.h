@@ -14,8 +14,6 @@
 #import "UIScrollView+MJRefresh.h"
 #import "NSBundle+MJRefresh.h"
 
-NS_ASSUME_NONNULL_BEGIN
-
 /** 刷新控件的状态 */
 typedef NS_ENUM(NSInteger, MJRefreshState) {
     /** 普通闲置状态 */
@@ -33,7 +31,7 @@ typedef NS_ENUM(NSInteger, MJRefreshState) {
 /** 进入刷新状态的回调 */
 typedef void (^MJRefreshComponentRefreshingBlock)(void);
 /** 开始刷新后的回调(进入刷新状态后的回调) */
-typedef void (^MJRefreshComponentBeginRefreshingCompletionBlock)(void);
+typedef void (^MJRefreshComponentbeginRefreshingCompletionBlock)(void);
 /** 结束刷新后的回调 */
 typedef void (^MJRefreshComponentEndRefreshingCompletionBlock)(void);
 
@@ -47,7 +45,7 @@ typedef void (^MJRefreshComponentEndRefreshingCompletionBlock)(void);
 }
 #pragma mark - 刷新回调
 /** 正在刷新的回调 */
-@property (copy, nonatomic, nullable) MJRefreshComponentRefreshingBlock refreshingBlock;
+@property (copy, nonatomic) MJRefreshComponentRefreshingBlock refreshingBlock;
 /** 设置回调对象和回调方法 */
 - (void)setRefreshingTarget:(id)target refreshingAction:(SEL)action;
 
@@ -63,17 +61,15 @@ typedef void (^MJRefreshComponentEndRefreshingCompletionBlock)(void);
 - (void)beginRefreshing;
 - (void)beginRefreshingWithCompletionBlock:(void (^)(void))completionBlock;
 /** 开始刷新后的回调(进入刷新状态后的回调) */
-@property (copy, nonatomic, nullable) MJRefreshComponentBeginRefreshingCompletionBlock beginRefreshingCompletionBlock;
-/** 带动画的结束刷新的回调 */
-@property (copy, nonatomic, nullable) MJRefreshComponentEndRefreshingCompletionBlock endRefreshingAnimateCompletionBlock;
+@property (copy, nonatomic) MJRefreshComponentbeginRefreshingCompletionBlock beginRefreshingCompletionBlock;
 /** 结束刷新的回调 */
-@property (copy, nonatomic, nullable) MJRefreshComponentEndRefreshingCompletionBlock endRefreshingCompletionBlock;
+@property (copy, nonatomic) MJRefreshComponentEndRefreshingCompletionBlock endRefreshingCompletionBlock;
 /** 结束刷新状态 */
 - (void)endRefreshing;
 - (void)endRefreshingWithCompletionBlock:(void (^)(void))completionBlock;
 /** 是否正在刷新 */
 @property (assign, nonatomic, readonly, getter=isRefreshing) BOOL refreshing;
-
+//- (BOOL)isRefreshing;
 /** 刷新状态 一般交给子类内部实现 */
 @property (assign, nonatomic) MJRefreshState state;
 
@@ -89,11 +85,11 @@ typedef void (^MJRefreshComponentEndRefreshingCompletionBlock)(void);
 /** 摆放子控件frame */
 - (void)placeSubviews NS_REQUIRES_SUPER;
 /** 当scrollView的contentOffset发生改变的时候调用 */
-- (void)scrollViewContentOffsetDidChange:(nullable NSDictionary *)change NS_REQUIRES_SUPER;
+- (void)scrollViewContentOffsetDidChange:(NSDictionary *)change NS_REQUIRES_SUPER;
 /** 当scrollView的contentSize发生改变的时候调用 */
-- (void)scrollViewContentSizeDidChange:(nullable NSDictionary *)change NS_REQUIRES_SUPER;
+- (void)scrollViewContentSizeDidChange:(NSDictionary *)change NS_REQUIRES_SUPER;
 /** 当scrollView的拖拽状态发生改变的时候调用 */
-- (void)scrollViewPanStateDidChange:(nullable NSDictionary *)change NS_REQUIRES_SUPER;
+- (void)scrollViewPanStateDidChange:(NSDictionary *)change NS_REQUIRES_SUPER;
 
 
 #pragma mark - 其他
@@ -107,8 +103,5 @@ typedef void (^MJRefreshComponentEndRefreshingCompletionBlock)(void);
 
 @interface UILabel(MJRefresh)
 + (instancetype)mj_label;
-- (CGFloat)mj_textWidth;
+- (CGFloat)mj_textWith;
 @end
-
-
-NS_ASSUME_NONNULL_END

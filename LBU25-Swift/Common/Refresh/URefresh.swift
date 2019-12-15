@@ -11,12 +11,12 @@ import MJRefresh
 
 extension UIScrollView {
     var uHead: MJRefreshHeader {
-        get { return mj_header }
+        get { return mj_header! }
         set { mj_header = newValue }
     }
     
     var uFoot: MJRefreshFooter {
-        get { return mj_footer }
+        get { return mj_footer! }
         set { mj_footer = newValue }
     }
 }
@@ -30,8 +30,8 @@ class URefreshHeader: MJRefreshGifHeader {
                    UIImage(named: "refresh_loading_2")!,
                    UIImage(named: "refresh_loading_3")!], for: .refreshing)
         
-        lastUpdatedTimeLabel.isHidden = true
-        stateLabel.isHidden = true
+        lastUpdatedTimeLabel?.isHidden = true
+        stateLabel?.isHidden = true
     }
 }
 
@@ -48,7 +48,7 @@ class URefreshDiscoverFooter: MJRefreshBackGifFooter {
         super.prepare()
         backgroundColor = UIColor.background
         setImages([UIImage(named: "refresh_discover")!], for: .idle)
-        stateLabel.isHidden = true
+        stateLabel?.isHidden = true
         refreshingBlock = { self.endRefreshing() }
     }
 }
