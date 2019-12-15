@@ -57,6 +57,7 @@ class LBUCateController: LBUBaseController {
             
             self.searchString = returnData?.recommendSearch ?? ""
             self.topList = returnData?.topList ?? []
+            self.rankList = returnData?.rankingList ?? []
             
             self.searchButon.setTitle(self.searchString, for: .normal)
             self.collectionView.reloadData()
