@@ -11,7 +11,7 @@ inhibit_all_warnings!
 pod 'SnapKitExtend'
 pod 'Then'
 pod 'Moya'
-pod 'HandyJSON', '5.0.0-beta.1'
+pod 'HandyJSON'
 pod 'Kingfisher'
 pod 'Reusable'
 pod 'LLCycleScrollView'
@@ -20,6 +20,6 @@ pod 'MBProgressHUD'
 pod 'HMSegmentedControl'
 pod 'IQKeyboardManagerSwift'
 pod 'EmptyDataSet-Swift'
-pod 'UINavigation-SXFixSpace-Swift'
+pod 'UINavigation-SXFixSpace'
 
 end

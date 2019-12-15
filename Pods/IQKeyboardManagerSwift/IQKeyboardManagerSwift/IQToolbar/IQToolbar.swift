@@ -21,11 +21,10 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-
 import UIKit
 
 /** @abstract   IQToolbar for IQKeyboardManager.    */
-open class IQToolbar: UIToolbar , UIInputViewAudioFeedback {
+open class IQToolbar: UIToolbar, UIInputViewAudioFeedback {
 
     private static var _classInitialize: Void = classInitialize()
     
@@ -35,7 +34,7 @@ open class IQToolbar: UIToolbar , UIInputViewAudioFeedback {
 
         appearanceProxy.barTintColor = nil
         
-        let positions : [UIBarPosition] = [.any,.bottom,.top,.topAttached]
+        let positions: [UIBarPosition] = [.any, .bottom, .top, .topAttached]
 
         for position in positions {
 
@@ -51,11 +50,10 @@ open class IQToolbar: UIToolbar , UIInputViewAudioFeedback {
      Previous bar button of toolbar.
      */
     private var privatePreviousBarButton: IQBarButtonItem?
-    @objc open var previousBarButton : IQBarButtonItem {
+    @objc open var previousBarButton: IQBarButtonItem {
         get {
             if privatePreviousBarButton == nil {
                 privatePreviousBarButton = IQBarButtonItem(image: nil, style: .plain, target: nil, action: nil)
-                privatePreviousBarButton?.accessibilityLabel = "Previous"
             }
             return privatePreviousBarButton!
         }
@@ -69,11 +67,10 @@ open class IQToolbar: UIToolbar , UIInputViewAudioFeedback {
      Next bar button of toolbar.
      */
     private var privateNextBarButton: IQBarButtonItem?
-    @objc open var nextBarButton : IQBarButtonItem {
+    @objc open var nextBarButton: IQBarButtonItem {
         get {
             if privateNextBarButton == nil {
                 privateNextBarButton = IQBarButtonItem(image: nil, style: .plain, target: nil, action: nil)
-                privateNextBarButton?.accessibilityLabel = "Next"
             }
             return privateNextBarButton!
         }
@@ -87,7 +84,7 @@ open class IQToolbar: UIToolbar , UIInputViewAudioFeedback {
      Title bar button of toolbar.
      */
     private var privateTitleBarButton: IQTitleBarButtonItem?
-    @objc open var titleBarButton : IQTitleBarButtonItem {
+    @objc open var titleBarButton: IQTitleBarButtonItem {
         get {
             if privateTitleBarButton == nil {
                 privateTitleBarButton = IQTitleBarButtonItem(title: nil)
@@ -105,11 +102,10 @@ open class IQToolbar: UIToolbar , UIInputViewAudioFeedback {
      Done bar button of toolbar.
      */
     private var privateDoneBarButton: IQBarButtonItem?
-    @objc open var doneBarButton : IQBarButtonItem {
+    @objc open var doneBarButton: IQBarButtonItem {
         get {
             if privateDoneBarButton == nil {
                 privateDoneBarButton = IQBarButtonItem(title: nil, style: .done, target: nil, action: nil)
-                privateDoneBarButton?.accessibilityLabel = "Done"
             }
             return privateDoneBarButton!
         }
@@ -123,7 +119,7 @@ open class IQToolbar: UIToolbar , UIInputViewAudioFeedback {
      Fixed space bar button of toolbar.
      */
     private var privateFixedSpaceBarButton: IQBarButtonItem?
-    @objc open var fixedSpaceBarButton : IQBarButtonItem {
+    @objc open var fixedSpaceBarButton: IQBarButtonItem {
         get {
             if privateFixedSpaceBarButton == nil {
                 privateFixedSpaceBarButton = IQBarButtonItem(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
@@ -181,25 +177,9 @@ open class IQToolbar: UIToolbar , UIInputViewAudioFeedback {
         }
     }
     
-    @objc override open var barStyle: UIBarStyle {
-        didSet {
-            
-            if titleBarButton.selectableTitleColor == nil {
-                if barStyle == .default {
-                    titleBarButton.titleButton?.setTitleColor(UIColor.init(red: 0.0, green: 0.5, blue: 1.0, alpha: 1), for: .normal)
-                } else {
-                    titleBarButton.titleButton?.setTitleColor(UIColor.yellow, for: .normal)
-                }
-            }
-        }
-    }
-    
     @objc override open func layoutSubviews() {
 
         super.layoutSubviews()
-
-        //If running on Xcode9 (iOS11) only then we'll validate for iOS version, otherwise for older versions of Xcode (iOS10 and below) we'll just execute the tweak
-#if swift(>=3.2)
 
         if #available(iOS 11, *) {
             return
@@ -208,17 +188,11 @@ open class IQToolbar: UIToolbar , UIInputViewAudioFeedback {
             var rightRect = CGRect.null
             var isTitleBarButtonFound = false
             
-            let sortedSubviews = self.subviews.sorted(by: { (view1 : UIView, view2 : UIView) -> Bool in
-                
-                let x1 = view1.frame.minX
-                let y1 = view1.frame.minY
-                let x2 = view2.frame.minX
-                let y2 = view2.frame.minY
-                
-                if x1 != x2 {
-                    return x1 < x2
+            let sortedSubviews = self.subviews.sorted(by: { (view1: UIView, view2: UIView) -> Bool in
+                if view1.frame.minX != view2.frame.minX {
+                    return view1.frame.minX < view2.frame.minX
                 } else {
-                    return y1 < y2
+                    return view1.frame.minY < view2.frame.minY
                 }
             })
             
@@ -235,122 +209,47 @@ open class IQToolbar: UIToolbar , UIInputViewAudioFeedback {
                 }
             }
             
-            let titleMargin : CGFloat = 16
+            let titleMargin: CGFloat = 16
 
-            let maxWidth : CGFloat = self.frame.width - titleMargin*2 - (leftRect.isNull ? 0 : leftRect.maxX) - (rightRect.isNull ? 0 : self.frame.width - rightRect.minX)
+            let maxWidth: CGFloat = self.frame.width - titleMargin*2 - (leftRect.isNull ? 0 : leftRect.maxX) - (rightRect.isNull ? 0 : self.frame.width - rightRect.minX)
             let maxHeight = self.frame.height
             
             let sizeThatFits = customTitleView.sizeThatFits(CGSize(width: maxWidth, height: maxHeight))
             
-            var titleRect : CGRect
+            var titleRect: CGRect
             
             if sizeThatFits.width > 0 && sizeThatFits.height > 0 {
                 let width = min(sizeThatFits.width, maxWidth)
                 let height = min(sizeThatFits.height, maxHeight)
                 
-                var x : CGFloat
+                var xPosition: CGFloat
 
-                if (leftRect.isNull == false) {
-                    x = titleMargin + leftRect.maxX + ((maxWidth - width)/2)
+                if leftRect.isNull == false {
+                    xPosition = titleMargin + leftRect.maxX + ((maxWidth - width)/2)
                 } else {
-                    x = titleMargin
+                    xPosition = titleMargin
                 }
                 
-                let y = (maxHeight - height)/2
+                let yPosition = (maxHeight - height)/2
                 
-                titleRect = CGRect(x: x, y: y, width: width, height: height)
+                titleRect = CGRect(x: xPosition, y: yPosition, width: width, height: height)
             } else {
                 
-                var x : CGFloat
+                var xPosition: CGFloat
                 
-                if (leftRect.isNull == false) {
-                    x = titleMargin + leftRect.maxX
+                if leftRect.isNull == false {
+                    xPosition = titleMargin + leftRect.maxX
                 } else {
-                    x = titleMargin
+                    xPosition = titleMargin
                 }
 
-                let width : CGFloat = self.frame.width - titleMargin*2 - (leftRect.isNull ? 0 : leftRect.maxX) - (rightRect.isNull ? 0 : self.frame.width - rightRect.minX)
+                let width: CGFloat = self.frame.width - titleMargin*2 - (leftRect.isNull ? 0 : leftRect.maxX) - (rightRect.isNull ? 0 : self.frame.width - rightRect.minX)
                 
-                titleRect = CGRect(x: x, y: 0, width: width, height: maxHeight)
+                titleRect = CGRect(x: xPosition, y: 0, width: width, height: maxHeight)
             }
             
             customTitleView.frame = titleRect
         }
-    
-#else
-        if let customTitleView = titleBarButton.customView {
-            var leftRect = CGRect.null
-            var rightRect = CGRect.null
-            var isTitleBarButtonFound = false
-            
-            let sortedSubviews = self.subviews.sorted(by: { (view1 : UIView, view2 : UIView) -> Bool in
-                
-                let x1 = view1.frame.minX
-                let y1 = view1.frame.minY
-                let x2 = view2.frame.minX
-                let y2 = view2.frame.minY
-                
-                if x1 != x2 {
-                    return x1 < x2
-                } else {
-                    return y1 < y2
-                }
-            })
-            
-            for barButtonItemView in sortedSubviews {
-                
-                if isTitleBarButtonFound == true {
-                    rightRect = barButtonItemView.frame
-                    break
-                } else if barButtonItemView === titleBarButton.customView {
-                    isTitleBarButtonFound = true
-                    //If it's UIToolbarButton or UIToolbarTextButton (which actually UIBarButtonItem)
-                } else if barButtonItemView.isKind(of: UIControl.self) == true {
-                    leftRect = barButtonItemView.frame
-                }
-            }
-            
-            let titleMargin : CGFloat = 16
-            let maxWidth : CGFloat = self.frame.width - titleMargin*2 - (leftRect.isNull ? 0 : leftRect.maxX) - (rightRect.isNull ? 0 : self.frame.width - rightRect.minX)
-            let maxHeight = self.frame.height
-            
-            let sizeThatFits = customTitleView.sizeThatFits(CGSize(width: maxWidth, height: maxHeight))
-            
-            var titleRect : CGRect
-
-            if sizeThatFits.width > 0 && sizeThatFits.height > 0 {
-                let width = min(sizeThatFits.width, maxWidth)
-                let height = min(sizeThatFits.height, maxHeight)
-                
-                var x : CGFloat
-                
-                if (leftRect.isNull == false) {
-                    x = titleMargin + leftRect.maxX + ((maxWidth - width)/2)
-                } else {
-                    x = titleMargin
-                }
-
-                let y = (maxHeight - height)/2
-                
-                titleRect = CGRect(x: x, y: y, width: width, height: height)
-            } else {
-                
-                var x : CGFloat
-                
-                if (leftRect.isNull == false) {
-                    x = titleMargin + leftRect.maxX
-                } else {
-                    x = titleMargin
-                }
-
-                let width : CGFloat = self.frame.width - titleMargin*2 - (leftRect.isNull ? 0 : leftRect.maxX) - (rightRect.isNull ? 0 : self.frame.width - rightRect.minX)
-                
-                titleRect = CGRect(x: x, y: 0, width: width, height: maxHeight)
-            }
-            
-            customTitleView.frame = titleRect
-        }
-#endif
     }
     
     @objc open var enableInputClicksWhenVisible: Bool {
