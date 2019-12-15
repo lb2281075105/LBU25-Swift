@@ -76,7 +76,7 @@ extension LBUSearchFooterView: UICollectionViewDataSource, UICollectionViewDeleg
         let cell = collectionView.dequeueReusableCell(for: indexPath, cellType: LBUSearchCollectionViewCell.self)
         cell.layer.cornerRadius = cell.bounds.height * 0.5
         cell.titleLabel.text = data[indexPath.row].name
-        cell.backgroundColor = UIColor.random
+//        cell.backgroundColor = UIColor.random
         return cell
     }
     
