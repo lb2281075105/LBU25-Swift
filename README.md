@@ -2,7 +2,7 @@
 
 Swift5 精仿漫画类App,Moya+SwiftyJSON+HandyJSON网络框架和数据解析。数据来源真实接口获得
 
-<font color=red >Swift5 精仿漫画类App 更新了最新第三方依赖,修复了iOS13奔溃问题</font>
+Swift5 精仿漫画类App 更新了最新第三方依赖,修复了iOS13奔溃问题
 
 
 # 注意
