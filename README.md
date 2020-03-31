@@ -4,7 +4,7 @@ Swift5 精仿漫画类App,Moya+SwiftyJSON+HandyJSON网络框架和数据解析�
 
 Swift5 精仿漫画类App 更新了最新第三方依赖,修复了iOS13奔溃问题
 
-
+喜马拉雅项目-Swift5版本[喜马拉雅项目-Swift5版本](https://github.com/lb2281075105/LBXMLYFM-Swift.git)
 # 注意
 Swift5 精仿漫画类App 在xcode10.1以上版本才能运行成功
 
