@@ -8,20 +8,7 @@ Swift5 精仿漫画类App 更新了最新第三方依赖,修复了iOS13奔溃问
 # 注意
 Swift5 精仿漫画类App 在xcode10.1以上版本才能运行成功
 
-精仿漫画类App:主要分为 首页 分类 书架 我的 四个大模块,详情可以查看截图,适配iOS11及iPhone X,使用了第三方框架SnapKit, Then, Moya, Alamofire, HandyJSON, Kingfisher, Reusable, LLCycleScrollView, MJRefresh, MBProgressHUD, HMSegmentedControl, IQKeyboardManagerSwift等,代码使用了Swift和OC混合开发,此项目方便初学者模仿学习使用,如果该项目对你的Swift学习有帮助,欢迎star哦,谢谢。
-
-<!--[简书地址](https://www.jianshu.com/p/f2be1fcb77d3)-->
-
-公众号: liubo920205 后期还会有新项目更新,又需要的可以关注一下哦 \n
-<img src="项目预览图/wechat.jpg" width="375">
-
-
-qq交流群:一群已满,请加二群扫下方二维码 \n
-
-
-<img src="项目预览图/qq.png" width="375">
-
-
+精仿漫画类App:主要分为 首页 分类 书架 我的 四个大模块,详情可以查看截图,适配iOS11及iPhone X,使用了第三方框架SnapKit, Then, Moya, Alamofire, HandyJSON, Kingfisher, Reusable, LLCycleScrollView, MJRefresh, MBProgressHUD, HMSegmentedControl, IQKeyboardManagerSwift等,代码使用了Swift和OC混合开发,此项目方便初学者模仿学习使用,如果该项目对你的Swift学习有帮助,欢迎star哦,谢谢
 ###### 0. 项目目录结构
 <img src="项目预览图/18.项目目录.png" width="375">
 
@@ -84,7 +71,5 @@ qq交流群:一群已满,请加二群扫下方二维码 \n
 
 #### 1️⃣小伙伴们请狠狠猛戳 Github[喜马拉雅项目-Swift5版本](https://github.com/lb2281075105/LBXMLYFM-Swift.git)
 
-#### 2️⃣公众号: liubo920205 后期还会有新项目更新,又需要的可以关注一下哦 \n
-<img src="项目预览图/wechat.jpg" width="375">
 
 如有侵权,造成影响,请联系本人删除,谢谢
